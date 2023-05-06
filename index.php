@@ -61,7 +61,7 @@
                 <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@funtedcol.com.co</a>
               </div>
               <div class="phone-box">
-                <a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +57 686 22 06</a>
+                <a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +57 300 2621973</a>
               </div>
             </div>
           </div>
