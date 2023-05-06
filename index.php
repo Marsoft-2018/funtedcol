@@ -61,7 +61,7 @@
                 <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@funtedcol.com.co</a>
               </div>
               <div class="phone-box">
-                <a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +57 300 2621973</a>
+                <a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +57 324 294 3174</a>
               </div>
             </div>
           </div>
@@ -219,13 +219,6 @@
         </div>
     </div>
 </div>	
-    <section id="vision" class="container-fluid" style="padding: 60px;">
-      <h3>Visión</h3>
-      <br>
-      <p style="line-height: 1.5em; text-align: justify;">
-        Para el año 2025, la Fundación Trabajando por la Educación y el Desarrollo de Colombia “FUNTEDCOL “Educando para el Futuro”, será reconocido a nivel regional y nacional por su excelente nivel académico en todos sus programas, contando con una infraestructura propia y moderna, un equipo de trabajo idóneo y comprometido con la satisfacción de nuestros estudiantes y la mejora continua de los procesos. Convirtiéndose en la mejor alternativa de formación para los montemarianos y colombianos en general.
-      </p>
-    </section>
     <section id="filosofia" class="container-fluid" style="padding: 60px;">
       <h3>Filosofía</h3>
       <br>
@@ -233,13 +226,74 @@
         La institución asume como compromiso el trabajar incansablemente por una construcción colectiva de valores como: la responsabilidad, autoestima, tolerancia, respeto, afecto, amistad, solidaridad, ternura, civismo, sentido de pertenencia, transparencia, equidad, justicia, espíritu de progreso y emprendimiento. De igual forma, se propende por la formación de un ser humano integral en donde él mismo sea artífice de su propio desarrollo.
       </p>
     </section>
-    
-    <section id="filosofia" class="container-fluid" style="padding: 60px;">
-      <h3>SIMBOLOS INSTITUCIONALES </h3>
+    <div id="simbolos" class="parallax section lb" data-stellar-background-ratio="0.7" style="background:url('uploads/textura1.png') repeat; ">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>SIMBOLOS INSTITUCIONALES</h3>
+            </div><!-- end title -->
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft simbolo" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <div class="card mb-4 shadow-sm imgSimbolo">
+                    <img src="img/Escudo.png" alt="" class="escudo"  style="margin-top: 10px;">
+                    <div class="card-body">
+                        <h3>ESCUDO</h3>
+                        <p class="card-text">
+                          
+                        </p>              
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 wow fadeInRight simbolo" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                  <div class="card mb-4 shadow-sm imgSimbolo">
+                    <img src="img/bandera.png" alt="" class="bandera"  style="margin-top: 10px;">
+                    <div class="card-body">
+                        <h3>BANDERA</h3>
+                        <p class="card-text">
+                          La Bandera del Instituto, está compuesta por dos franjas horizontales de igual tamaño y una en el medio color ocre, una de color rojo y la otra de color blanco. La cual debemos portar como estandarte con respeto y amor en todos los actos públicos y privados e izarla junto con el pabellón nacional.                          
+                        </p>              
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="vision" class="container-fluid" style="padding: 60px;">
+      <h3>Himno</h3>
       <br>
-      <h4>La Bandera</h4>
       <p style="line-height: 1.5em; text-align: justify;">
-        La Bandera del Instituto, está compuesta por dos franjas horizontales de igual tamaño y una en el medio color ocre, una de color rojo y la otra de color blanco. La cual debemos portar como estandarte con respeto y amor en todos los actos públicos y privados e izarla junto con el pabellón nacional.
+          Coro<br>
+          Caminando la senda trazada<br>
+          obtenemos el triunfo final<br>
+          “Educamos para el futuro”<br>
+          con autonomía, solidaridad y equidad.<br>
+          I<br>
+          Soleadas montañas es el marco<br>
+          con que la naturaleza nos recrea<br>
+          Funtedcol el pilar apreciado<br>
+          que el Gran Hacedor obsequió.
+          <br>
+          Coro<br>
+          Caminando la senda trazada<br>
+          obtenemos el triunfo final<br>
+          “Educamos para el futuro”<br>
+          con autonomía, solidaridad y equidad.<br>
+          II<br>
+          El éxito con avidez me llama<br>
+          gestor de cambio será mi Misión,<br>
+          enarbolo la inclusión comunitaria<br>
+          como signo de mi convicción.
+          <br>
+          Coro<br>
+          Caminando la senda trazada<br>
+          obtenemos el triunfo final<br>
+          “Educamos para el futuro”<br>
+          con autonomía, solidaridad y equidad.
+          <br>
+          III<br>
+          La Fundación, me cobija en su pecho<br>
+          educado con imparcialidad<br>
+          para enfrentar con fe y entusiasmo<br>
+          mi ingreso al mercado laboral.
       </p>
     </section>
     <footer class="mt-5" style="display: flex; justify-content: center; background: linear-gradient(45deg,#bf0000,#ed3237); color: #fff; text-align: center; padding: 60px;">
