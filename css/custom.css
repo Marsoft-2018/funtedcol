@@ -1,6 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-section{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6em;
-    font-style: italic;
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+.seccion-informacion{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.info-general{
+    flex-grow: 4;
+    
+}
+
+.info-noticias{
+    box-sizing: border-box;
+    display:flex;
+    flex-grow:1;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(280deg,#fff, #ffe, #fdcaff);
+    padding: 10px;
+    height: 1100px;
+    width: 350px;
+    overflow-y: auto;
+    
+}
+
+.info-noticias .card-noticia{
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 2px;
+    
+}
+
+.info-noticias .card-noticia img{
+    width: 100%;
+}
+
+.info-noticias .card-noticia p{
+    width: 100%;
+    padding: 2px;
 }
