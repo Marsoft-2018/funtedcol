@@ -71,7 +71,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="background-color: rgb(192,0,0); margin: 0px;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="img/Imagen1.png" alt="" width="60" height="54" class="d-inline-block align-text-top">
+          <img src="img/escudo.png" alt="" width="60" height="54" class="d-inline-block align-text-top">
         </a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -110,10 +110,6 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
             <img src="img/Imagen2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>EDUCANDO PARA EL FUTURO</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-            </div>
             </div>
             <div class="carousel-item">
             <img src="img/Imagen3.png" class="d-block w-100" alt="...">
@@ -140,7 +136,7 @@
         </button>
     </div>
     <div class="row gx-5 m-3 mb-4">
-      <h3 style="text-align: center;">PROGRAMAS TÉCNICOS LABORALES</h3>
+      <h3 style="text-align: center; font-size:3em;margin-top:60px;margin-bottom:60px;">PROGRAMAS TÉCNICOS LABORALES</h3>
     </div>
     <section class="programas" style="display: flex; justify-content: center;">
         <div class="card mx-2" style="width: 18rem;">
@@ -176,16 +172,22 @@
             </div>
           </div>
     </section>
-    <section id="quienesSomos" class="container-fluid" style="padding: 60px;">
-      <h3>Quienes somos</h3>
-      <br>
-      <p style="line-height: 1.5em; text-align: justify;">
-        El Objeto Social de FUNTEDCOL, es la de ser una Institución formadora y capacitadora de jóvenes y adultos teniendo en cuenta las necesidades de las personas para el Trabajo y el Desarrollo del Talento Humano, mediante la formación integral en aspecto académicos y por competencias laborales generales y específicas, así, como las organizativas, comunicativas, técnicas y tecnológicas, las Intelectuales, interpersonales, personales, las emprendedoras, facilitando el desarrollo de habilidades y destrezas para el trabajo, artesanal, artístico recreacional,   en los diferentes sectores de la producción, la distribución, y de los servicios; para ser líderes capaces de montar sus propias microempresas, que respondan a las necesidades de la comunidad y del entorno empresarial, impulsando el desarrollo sostenible a nivel local, regional, nacional y se articulen en el mundo globalizado de la economía de hoy.<br><br>
-        Aspectos Legales: Los aspectos legales son los cimientos en que se apoya FUNTEDCOL, para su funcionamiento, especialmente el art. 67 de la Constitución Política de Colombia, que expresa que la educación es un derecho de la persona y un servicio público que tiene una función social; en la Ley 30 de 1992, en la Ley 115 General de la Educación del año 1994, que en sus diferentes artículos fundamenta las bases del Sistema Educativo Colombiano en su Título I, Disposiciones Preliminares y en los siguientes artículos:
-        El artículo2º -Servicios Educativos: Comprende el conjunto de Normas Jurídicas, los programas curriculares, la educación formal e informal, de los establecimientos educativos, las instituciones sociales (estatales o Privadas) con funciones educativas, culturales y recreativas, los recursos humanos, tecnológicos, metodológicos, materiales, administrativos y financieros, articulados en procesos y estructuras para alcanzarlos objetivos de la educación.
-
-      </p>
-    </section>
+    <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('');" id="vision">
+      <div class="container">
+        <div class="row text-right align-items-center">
+            <div class="col-md-12"  style="background-color: rgba(250,250,250,0.2); padding: 15px;">
+                <div class="mision-vision text-right" >
+                    <h1 style="color: #000;">QUIENES SOMOS</h1>
+                    <p style="color: #000; font-size: 1.3em;">                      
+                      El Objeto Social de FUNTEDCOL, es la de ser una Institución formadora y capacitadora de jóvenes y adultos teniendo en cuenta las necesidades de las personas para el Trabajo y el Desarrollo del Talento Humano, mediante la formación integral en aspecto académicos y por competencias laborales generales y específicas, así, como las organizativas, comunicativas, técnicas y tecnológicas, las Intelectuales, interpersonales, personales, las emprendedoras, facilitando el desarrollo de habilidades y destrezas para el trabajo, artesanal, artístico recreacional,   en los diferentes sectores de la producción, la distribución, y de los servicios; para ser líderes capaces de montar sus propias microempresas, que respondan a las necesidades de la comunidad y del entorno empresarial, impulsando el desarrollo sostenible a nivel local, regional, nacional y se articulen en el mundo globalizado de la economía de hoy.<br><br>
+                      Aspectos Legales: Los aspectos legales son los cimientos en que se apoya FUNTEDCOL, para su funcionamiento, especialmente el art. 67 de la Constitución Política de Colombia, que expresa que la educación es un derecho de la persona y un servicio público que tiene una función social; en la Ley 30 de 1992, en la Ley 115 General de la Educación del año 1994, que en sus diferentes artículos fundamenta las bases del Sistema Educativo Colombiano en su Título I, Disposiciones Preliminares y en los siguientes artículos:
+                      El artículo2º -Servicios Educativos: Comprende el conjunto de Normas Jurídicas, los programas curriculares, la educación formal e informal, de los establecimientos educativos, las instituciones sociales (estatales o Privadas) con funciones educativas, culturales y recreativas, los recursos humanos, tecnológicos, metodológicos, materiales, administrativos y financieros, articulados en procesos y estructuras para alcanzarlos objetivos de la educación.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
     <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('img/fondos/mision.jpg');" id="mision">
       <div class="container" >
           <div class="row">
@@ -196,8 +198,8 @@
                       </p>
                   </div>
               </div>
-              <div class="col-md-6" style="display: flex; justify-content: center; align-items: center;">
-                <img src="img/Imagen1.png" alt="" width="550">
+              <div class="col-md-6" style="display: flex; justify-content: center; align-items: strech;">
+                <img src="img/mision.png" alt="">
               </div>
           </div>
       </div>
@@ -206,8 +208,9 @@
   <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('img/fondos/fondo2.png');" id="vision">
     <div class="container">
         <div class="row text-right align-items-center">
-            <div class="col-md-6">
-            </div>
+              <div class="col-md-6" style="display: flex; justify-content: center; align-items: strech;">
+                <img src="img/vision.png" alt="">
+              </div>
             <div class="col-md-6"  style="background-color: rgba(0,0,0,0.2); padding: 15px;">
                 <div class="mision-vision text-right">
                     <h1>VISION</h1>
@@ -219,14 +222,22 @@
         </div>
     </div>
 </div>	
-    <section id="filosofia" class="container-fluid" style="padding: 60px;">
-      <h3>Filosofía</h3>
-      <br>
-      <p style="line-height: 1.5em; text-align: justify;">
-        La institución asume como compromiso el trabajar incansablemente por una construcción colectiva de valores como: la responsabilidad, autoestima, tolerancia, respeto, afecto, amistad, solidaridad, ternura, civismo, sentido de pertenencia, transparencia, equidad, justicia, espíritu de progreso y emprendimiento. De igual forma, se propende por la formación de un ser humano integral en donde él mismo sea artífice de su propio desarrollo.
-      </p>
-    </section>
-    <div id="simbolos" class="parallax section lb" data-stellar-background-ratio="0.7" style="background:url('uploads/textura1.png') repeat; ">
+  
+  <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('');" id="vision">
+    <div class="container">
+        <div class="row text-right align-items-center">
+            <div class="col-md-12"  style="background-color: rgba(250,250,250,0.2); padding: 15px;">
+                <div class="mision-vision text-right" >
+                    <h1 style="color: #000;">FILOSOFÍA</h1>
+                    <p style="color: #000; font-size: 1.3em;">                      
+                    La institución asume como compromiso el trabajar incansablemente por una construcción colectiva de valores como: la responsabilidad, autoestima, tolerancia, respeto, afecto, amistad, solidaridad, ternura, civismo, sentido de pertenencia, transparencia, equidad, justicia, espíritu de progreso y emprendimiento. De igual forma, se propende por la formación de un ser humano integral en donde él mismo sea artífice de su propio desarrollo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	
+    <div id="simbolos" class="parallax section lb" data-stellar-background-ratio="0.7" style="background:url('img/fondos/5594016.jpg') repeat; ">
         <div class="container">
             <div class="section-title text-center">
                 <h3>SIMBOLOS INSTITUCIONALES</h3>
@@ -234,7 +245,7 @@
             <div class="row">
                 <div class="col-md-6 wow fadeInLeft simbolo" data-wow-duration="1.5s" data-wow-delay="0.2s">
                   <div class="card mb-4 shadow-sm imgSimbolo">
-                    <img src="img/Escudo.png" alt="" class="escudo"  style="margin-top: 10px;">
+                    <img src="img/escudoG.png" alt="" class="escudo"  style="margin-top: 10px;">
                     <div class="card-body">
                         <h3>ESCUDO</h3>
                         <p class="card-text">
@@ -256,45 +267,62 @@
                 </div>
             </div>
         </div>
+    <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('uploads/barra_03.jpg');" id="himno">    
+        <h1 style="color: #000;text-align: center; font-size: 3em; margin-bottom:40px;">HIMNO</h1>
+        <div class="container">
+            <div class="row text-center align-items-center">
+                <div class="col-md-6 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <div class="mision-vision text-left">
+                        <p style="color: #000; font-size: 1.1em; background-color: rgba(250,250,250,0.6); padding:5px;">
+                          Coro<br>
+                          Caminando la senda trazada<br>
+                          obtenemos el triunfo final<br>
+                          “Educamos para el futuro”<br>
+                          con autonomía, solidaridad y equidad.<br>
+                          I<br>
+                          Soleadas montañas es el marco<br>
+                          con que la naturaleza nos recrea<br>
+                          Funtedcol el pilar apreciado<br>
+                          que el Gran Hacedor obsequió.
+                          <br>
+                          Coro<br>
+                          Caminando la senda trazada<br>
+                          obtenemos el triunfo final<br>
+                          “Educamos para el futuro”<br>
+                          con autonomía, solidaridad y equidad.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                    <div class="mision-vision text-left">
+                        <p style="color: #000; font-size: 1.1em; background-color: rgba(250,250,250,0.6); padding:5px;">
+                          II<br>
+                          El éxito con avidez me llama<br>
+                          gestor de cambio será mi Misión,<br>
+                          enarbolo la inclusión comunitaria<br>
+                          como signo de mi convicción.
+                          <br>
+                          Coro<br>
+                          Caminando la senda trazada<br>
+                          obtenemos el triunfo final<br>
+                          “Educamos para el futuro”<br>
+                          con autonomía, solidaridad y equidad.
+                          <br>
+                          III<br>
+                          La Fundación, me cobija en su pecho<br>
+                          educado con imparcialidad<br>
+                          para enfrentar con fe y entusiasmo<br>
+                          mi ingreso al mercado laboral.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
     </div>
+     
     <section id="vision" class="container-fluid" style="padding: 60px;">
-      <h3>Himno</h3>
-      <br>
-      <p style="line-height: 1.5em; text-align: justify;">
-          Coro<br>
-          Caminando la senda trazada<br>
-          obtenemos el triunfo final<br>
-          “Educamos para el futuro”<br>
-          con autonomía, solidaridad y equidad.<br>
-          I<br>
-          Soleadas montañas es el marco<br>
-          con que la naturaleza nos recrea<br>
-          Funtedcol el pilar apreciado<br>
-          que el Gran Hacedor obsequió.
-          <br>
-          Coro<br>
-          Caminando la senda trazada<br>
-          obtenemos el triunfo final<br>
-          “Educamos para el futuro”<br>
-          con autonomía, solidaridad y equidad.<br>
-          II<br>
-          El éxito con avidez me llama<br>
-          gestor de cambio será mi Misión,<br>
-          enarbolo la inclusión comunitaria<br>
-          como signo de mi convicción.
-          <br>
-          Coro<br>
-          Caminando la senda trazada<br>
-          obtenemos el triunfo final<br>
-          “Educamos para el futuro”<br>
-          con autonomía, solidaridad y equidad.
-          <br>
-          III<br>
-          La Fundación, me cobija en su pecho<br>
-          educado con imparcialidad<br>
-          para enfrentar con fe y entusiasmo<br>
-          mi ingreso al mercado laboral.
-      </p>
+
     </section>
     <footer class="mt-5" style="display: flex; justify-content: center; background: linear-gradient(45deg,#bf0000,#ed3237); color: #fff; text-align: center; padding: 60px;">
 Dirección<br>
