@@ -46,11 +46,26 @@
             <div class="right-top">
               <div class="social-box">
                 <ul>
-                  <li><a href="https://www.facebook.com/funtedcol.funtedcol"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.facebook.com/funtedcol.funtedcol">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+                  <li><a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                  <li><a href="#">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+                  <li><a href="#">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+                  <li><a href="#">
+                    <i class="fa fa-rss-square" aria-hidden="true"></i>
+                  </a>
+                </li>
                 </ul>
               </div>
             </div>
@@ -58,17 +73,19 @@
           <div class="col-md-6 col-sm-6">
             <div class="left-top">
               <div class="email-box">
-                <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@funtedcol.com.co</a>
+                <a href="#">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i> info@funtedcol.com.co</a>
               </div>
               <div class="phone-box">
-                <a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +57 324 294 3174</a>
+                <a href="tel:1234567890">
+                  <i class="fa fa-phone" aria-hidden="true"></i> +57 324 294 3174</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="background-color: rgb(192,0,0); margin: 0px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="background-color: rgb(192,0,0); margin: 0px; color:#000;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="img/escudo.png" alt="" width="60" height="54" class="d-inline-block align-text-top">
@@ -78,23 +95,150 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#quienesSomos">Quines somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mision">Misión</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#vision">Visión</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-university"></i> Institución
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#quienesSomos"><i class="fa fa-building"></i> Quines somos</a></li>
+                <li><a class="dropdown-item" href="#mision"><i class="fa fa-compass"></i> Misión</a></li>
+                <li><a class="dropdown-item" href="#vision"><i class="fa fa-eye"></i> Visión</a></li>
+                <li><a class="dropdown-item" href="#simbolos"><i class="fa fa-flag"></i> Símbolos institucionales</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-book"></i> Licencia y resoluciones</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
+                <i class="fa fa-bookmark-o"></i> Programas Técnicos Laborales
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-heartbeat"></i> Seguridad ocupacional y laboral</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-line-chart"></i> Auxiliar Administrativo</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-empire"></i> Auxiliar en Recursos Humanos</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-money"></i> Auxiliar Contable y Financiero</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-child"></i> Auxiliar en Educación para la Primera Infancia</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-comments-o"></i> Auxiliar En Mercadeo Y Ventas</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-plug"></i> Electricidad residencial</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-medkit"></i> Auxiliar en Servicios Farmacéuticos en Convenio con CEPRODENT</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-bicycle"></i> Entrenamiento Deportivo</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-desktop"></i> Auxiliar En Sistemas Informáticos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bookmark-o"></i> Diplomados
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">              
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Seguridad Social</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Seguridad Y Salud En El Trabajo</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Auditor Interno Hseq</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Gestión Documental Y Administración De Archivos</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Auditoría Y Control Interno</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Matemáticas Financieras</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Finanzas</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Gerencia Financiera</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Normas Internacionales De Información Financiera (Pymes)</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Nómina Y Prestaciones Sociales</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Gestión De Recursos Humanos</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Neuropedagogía Infantil</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Docencia Universitaria</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Educación Especial</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Educación Infantil</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Neuroeducación</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Pedagogía Basada En Competencias</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Prevención Del Abuso Sexual Infantil</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i>	Neurodesarrollo, Educacion Y Psicologia Del Desarrollo Infantil</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bookmark-o"></i> Cursos Salud
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">            
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Soporte Vital Basico (Bls)</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Soporte Vital Avanzado (Acls)</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Gestion Del Duelo</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Humanizacion De Servicios En Salud</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Seguridad Del Paciente</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Cuidado Del Auxiliar De Enfermería Al Adulto Críticamente Enfermo</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Inducción A Bacteriología Y Laboratorio Clínico</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Bioseguridad Y Laboratorio Clínico</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Toma De Muestras En Tml Y Análisis</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Toma De Muestras Especiales</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Citología</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Atencion Integrada De Las Enfermedades Prevalentes De La Infancia (Aiepi Clinico)</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Atencion Integrada De Las Enfermedades Prevalentes De La Infancia  (Aiepi Comunitario)</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Atencion A Victimas De Violencia Sexual</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Atencion A Victimas De Ataques Con Agentes Quimicos</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Manejo Integral De Salud De Victimas De Violencia Sexual</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Atencion De Pacientes Con Cuidados Paliativos</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Cuidados Paliativos</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Bioseguridad Covid-19</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Aplicación De Inmunobiologicos (Vacunacion)</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Aplicación De Inmunobiologicos Covid-19</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Estrategia Iami</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Primeros Auxilios</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bookmark-o"></i> Cursos Administrativos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Manejo De Caja Registradora</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Servicio Al Cliente</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Mercadeo Y Ventas</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Higiene Y Manipulacion De Alimentos</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bookmark-o"></i> Otros Cursos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Trabajo Seguro En Alturas</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Seguridad Y Salud En El Trabajo</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Office (Word, Excel, Powerpoint</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Excel Basico</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Excel Avanzado</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Manejo De Extintores</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Rescate En Alturas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bookmark-o"></i> Cursos De Belleza
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Limpieza Facial</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Depilacion, Diseño De Cejas Y Extensiones De Pestañas</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Maquillaje</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Uñas (Semipermanente, Pres On, Acliricas)</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bookmark-o"></i> Seminarios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Alta Gerencia</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Gerencia De Marketing</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Gerencia Financiera</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Psicologia Del Desarrollo Infantil</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Marketing Digital</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Legislacion Laboral</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Prevencion De Riesgos Laborales En Ambientes De Trabajo</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Gestion Empresarial</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Psicologia Del Desarrollo Infantil</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Instalaciones De Paneles Solares</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Energias Renovables</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Toxicologia Farmacologica</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Farmacocinetica, Farmacodinamia Y Farmacovigilancia</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-circle"></i> Responsabilidad Social Empresarial</a></li>
               </ul>
             </li>
           </ul>
@@ -119,7 +263,7 @@
             </div>
             </div>
             <div class="carousel-item">
-            <img src="img/graduados2.jpg" class="d-block w-100" alt="...">
+            <img src="img/Imagen1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -142,37 +286,40 @@
         <div class="card mx-2" style="width: 18rem;">
             <img src="img/estudiantes.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Título del programa</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio a voluptatem saepe consectetur! Consequuntur adipisci aut sit eveniet fugit cum hic libero, ratione nostrum officiis cumque quo non tempora iste!</p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              <h2 class="card-title" style="color: #c00000;">Seguridad ocupacional y laboral</h2>
+              <p class="card-text">El técnico en SEGURIDAD OCUPACIONAL Y LABORAL de FUNTEDCOL estará en la capacidad de Apoyar la inspección, capacitaciones, manejo de indicadores de gestión y condiciones de los lugares de trabajo, SG-SST, además tramitan las incapacidades ante las administradoras de riesgo, procesan información y ayudan en las actividades de los sistemas de seguridad en el trabajo, ambientales y de seguridad industrial. Están empleados por empresas públicas y privadas.</p>
+              <a href="#" class="btn btn-danger">Ver más</a>
             </div>
           </div>
           <div class="card mx-2" style="width: 18rem;">
             <img src="img/estudiantes2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Título del programa</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, pariatur omnis vitae ad ab ut. Voluptatem amet provident laboriosam saepe optio, totam fugit ab quasi rem, explicabo voluptas recusandae. Aut?</p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              
+              <h2 class="card-title" style="color: #c00000;">Auxiliar administrativo</h2>
+              <p class="card-text">La carrera en AUXILIAR ADMINISTRATIVO de FUNTEDCOL forma técnicos laborales que están en la capacidad de realizar actividades de organización y gestión de archivos, servicio al cliente, entre otras. Además tiene las competencias para registrar las operaciones contables de una compañía, elaborar la nómina y hacer análisis financieros.</p>
+              <a href="#" class="btn btn-danger">Ver más</a>
             </div>
           </div>
           <div class="card mx-2" style="width: 18rem;">
             <img src="img/estudiantes3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Título del programa</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, pariatur omnis vitae ad ab ut. Voluptatem amet provident laboriosam saepe optio, totam fugit ab quasi rem, explicabo voluptas recusandae. Aut?</p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              
+              <h2 class="card-title" style="color: #c00000;">Auxiliar Contable y Financiero</h2>
+              <p class="card-text">La carrera técnica de Auxiliar Contable y Financiero de FUNTEDCOL Realizan la medición y reconocimiento de las transacciones contables y financieras, realizan procesos de liquidación de impuestos, cuantifican costos y registran las operaciones de flujos monetarios, verifican inventarios, depuran y apoyan la elaboración de informes, comprobantes y documentos relacionados con empresa o personas naturales. Son empleados por el sector público y privado.</p>
+              <a href="#" class="btn btn-danger">Ver más</a>
             </div>
           </div>
           <div class="card mx-2" style="width: 18rem;">
             <img src="img/estudiantes4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Título del programa</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, pariatur omnis vitae ad ab ut. Voluptatem amet provident laboriosam saepe optio, totam fugit ab quasi rem, explicabo voluptas recusandae. Aut?</p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+              
+              <h2 class="card-title" style="color: #c00000;">Auxiliar en Recursos Humanos</h2>
+              <p class="card-text">La carrera técnica de Auxiliar en Recursos Humanos de FUNTEDCOL forma técnicos laborales con competencias para la asistencia en los procesos de selección, vinculación, contratación y capacitación del personal. También, con competencias para apoyar al profesional en gestión humana en los procesos de manejo de personal, además apoyan a los profesionales y asistentes de talento humano. Recopilan, actualizan y tramitan información de los procesos de gestión humana. Están empleados por departamentos de personal en el sector público y privado.</p>
+              <a href="#" class="btn btn-danger">Ver más</a>
             </div>
           </div>
     </section>
-    <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('');" id="vision">
+    <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('');" id="quienesSomos">
       <div class="container">
         <div class="row text-right align-items-center">
             <div class="col-md-12"  style="background-color: rgba(250,250,250,0.2); padding: 15px;">
@@ -329,6 +476,7 @@ Dirección<br>
 Télefono
 
     </footer>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
