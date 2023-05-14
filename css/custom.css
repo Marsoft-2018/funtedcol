@@ -44,3 +44,13 @@
     width: 100%;
     padding: 2px;
 }
+
+.aliados{
+    display:flex; justify-content: center; align-items:center; padding:40px; gap:1em;
+    box-sizing: border-box;
+}
+
+.aliados img{
+    width: 120px;
+    height: 120px;
+}
