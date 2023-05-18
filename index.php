@@ -14,7 +14,7 @@
     <meta name="author" content="Ing. Jose Alfredo Tapia">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/logos/logo_32.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS
@@ -112,7 +112,7 @@
                 <i class="fa fa-bookmark-o"></i> Programas Técnicos Laborales
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#"><i class="fa fa-heartbeat"></i> Seguridad ocupacional y laboral</a></li>
+                <li><a class="dropdown-item" href="programas/index.php?pro=SeguridadOcupacional"><i class="fa fa-heartbeat"></i> Seguridad ocupacional y laboral</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-line-chart"></i> Auxiliar Administrativo</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-empire"></i> Auxiliar en Recursos Humanos</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-money"></i> Auxiliar Contable y Financiero</a></li>
@@ -184,7 +184,7 @@
             <div class="card-body">
               <h2 class="card-title" style="color: #c00000;">Seguridad ocupacional y laboral</h2>
               <p class="card-text">El técnico en SEGURIDAD OCUPACIONAL Y LABORAL de FUNTEDCOL estará en la capacidad de Apoyar la inspección, capacitaciones, manejo de indicadores de gestión y condiciones de los lugares de trabajo, SG-SST, además tramitan las incapacidades ante las administradoras de riesgo, procesan información y ayudan en las actividades de los sistemas de seguridad en el trabajo, ambientales y de seguridad industrial. Están empleados por empresas públicas y privadas.</p>
-              <a href="#" class="btn btn-danger">Ver más</a>              
+              <a href="programas/index.php?pro=SeguridadOcupacional" class="btn btn-danger">Ver más</a>              
             </div>
           </div>
           <div class="card mx-2" style="width: 25rem;">
@@ -572,9 +572,9 @@
       Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; </br>
       establecida por el Decreto 4904 de 2009, Decreto 1075 de 2015, Ley G/ral de Educación 115 de 1994.</br>
       </br>
-      E-mail: funtedcol2018@gmail.com - info@funtedcol.com.co - gerencia@funtedcol.com.co
+      E-mail: funtedcol2018@gmail.com - info@funtedcol.com.co - director@funtedcol.com.co
       </br>
-      Teléfono: 3002621973 - 3242943174
+      Teléfono: 3242943174
     </p>
     </br>
     <div class="social-box">
