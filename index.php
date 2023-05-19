@@ -113,10 +113,10 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="programas/index.php?pro=SeguridadOcupacional"><i class="fa fa-heartbeat"></i> Seguridad ocupacional y laboral</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-line-chart"></i> Auxiliar Administrativo</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-empire"></i> Auxiliar en Recursos Humanos</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-money"></i> Auxiliar Contable y Financiero</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-child"></i> Auxiliar en Educación para la Primera Infancia</a></li>
+                <li><a class="dropdown-item" href="programas/index.php?pro=AuxiliarAdministrativo"><i class="fa fa-line-chart"></i> Auxiliar Administrativo</a></li>
+                <li><a class="dropdown-item" href="programas/index.php?pro=AuxiliarRecursosHumanos"><i class="fa fa-empire"></i> Auxiliar en Recursos Humanos</a></li>
+                <li><a class="dropdown-item" href="programas/index.php?pro=AuxiliarContable"><i class="fa fa-money"></i> Auxiliar Contable y Financiero</a></li>
+                <li><a class="dropdown-item" href="programas/index.php?pro=AuxiliarPrimeraInfancia"><i class="fa fa-child"></i> Auxiliar en Educación para la Primera Infancia</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-comments-o"></i> Auxiliar En Mercadeo Y Ventas</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-plug"></i> Electricidad residencial</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-medkit"></i> Auxiliar en Servicios Farmacéuticos en Convenio con CEPRODENT</a></li>
@@ -193,7 +193,7 @@
               
               <h2 class="card-title" style="color: #c00000;">Auxiliar administrativo</h2>
               <p class="card-text">La carrera en AUXILIAR ADMINISTRATIVO de FUNTEDCOL forma técnicos laborales que están en la capacidad de realizar actividades de organización y gestión de archivos, servicio al cliente, entre otras. Además tiene las competencias para registrar las operaciones contables de una compañía, elaborar la nómina y hacer análisis financieros.</p>
-              <a href="#" class="btn btn-danger">Ver más</a>
+              <a href="programas/index.php?pro=AuxiliarAdministrativo" class="btn btn-danger">Ver más</a>
             </div>
           </div>
           <div class="card mx-2" style="width: 25rem;">
@@ -202,7 +202,7 @@
               
               <h2 class="card-title" style="color: #c00000;">Auxiliar Contable y Financiero</h2>
               <p class="card-text">La carrera técnica de Auxiliar Contable y Financiero de FUNTEDCOL Realizan la medición y reconocimiento de las transacciones contables y financieras, realizan procesos de liquidación de impuestos, cuantifican costos y registran las operaciones de flujos monetarios, verifican inventarios, depuran y apoyan la elaboración de informes, comprobantes y documentos relacionados con empresa o personas naturales. Son empleados por el sector público y privado.</p>
-              <a href="#" class="btn btn-danger">Ver más</a>
+              <a href="programas/index.php?pro=AuxiliarContable" class="btn btn-danger">Ver más</a>
             </div>
           </div>
           <div class="card mx-2" style="width: 25rem;">
