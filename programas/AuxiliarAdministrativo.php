@@ -80,7 +80,7 @@
                 <hr>
                 <div class="row">
                   <div class="col-6  animate__animated animate__slideInDown --animate-delay: 0.9s;">
-                    <img src="../img/imagen7.png" alt="" style="margin-top:50px;width:100%;  border-radius:0px 0px 10% 0px; box-shadow:10px 0px 0px #c00;">                          
+                    <img src="../img/Imagen7.png" alt="" style="margin-top:50px;width:100%;  border-radius:0px 0px 10% 0px; box-shadow:10px 0px 0px #c00;">                          
                   </div>
                   <div class="col-6" style="margin-top:50px;">
                     <div class="row  animate__animated animate__slideInRight --animate-delay: 0.9s;">

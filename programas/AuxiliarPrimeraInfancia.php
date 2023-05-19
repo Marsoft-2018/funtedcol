@@ -95,7 +95,7 @@
                 <hr>
                 <div class="row">
                   <div class="col-6">
-                    <img src="../img/imagen6.png" alt="" style="margin-top:120px;width:100%;  border-radius:0px 0px 10% 0px; box-shadow:10px 0px 0px #c00;">                          
+                    <img src="../img/Imagen6.png" alt="" style="margin-top:120px;width:100%;  border-radius:0px 0px 10% 0px; box-shadow:10px 0px 0px #c00;">                          
                   </div>
                   <div class="col-6">
                     <div class="row animate__animated animate__slideInRight">
