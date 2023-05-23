@@ -104,7 +104,8 @@
                 <li><a class="dropdown-item" href="#mision"><i class="fa fa-compass"></i> Misión</a></li>
                 <li><a class="dropdown-item" href="#vision"><i class="fa fa-eye"></i> Visión</a></li>
                 <li><a class="dropdown-item" href="#simbolos"><i class="fa fa-flag"></i> Símbolos institucionales</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-book"></i> Licencia y resoluciones</a></li>
+                <li><a class="dropdown-item" href="#licencia"><i class="fa fa-book"></i> Licencia y resoluciones</a></li>
+                <li><a class="dropdown-item" href="paginas/index.php?pag=administracion"><i class="fa fa-sitemap"></i> Administracion</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -112,11 +113,11 @@
                 <i class="fa fa-bookmark-o"></i> Programas Técnicos Laborales
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="programas/index.php?pro=SeguridadOcupacional"><i class="fa fa-heartbeat"></i> Seguridad ocupacional y laboral</a></li>
-                <li><a class="dropdown-item" href="programas/index.php?pro=AuxiliarAdministrativo"><i class="fa fa-line-chart"></i> Auxiliar Administrativo</a></li>
-                <li><a class="dropdown-item" href="programas/index.php?pro=AuxiliarRecursosHumanos"><i class="fa fa-empire"></i> Auxiliar en Recursos Humanos</a></li>
-                <li><a class="dropdown-item" href="programas/index.php?pro=AuxiliarContable"><i class="fa fa-money"></i> Auxiliar Contable y Financiero</a></li>
-                <li><a class="dropdown-item" href="programas/index.php?pro=AuxiliarPrimeraInfancia"><i class="fa fa-child"></i> Auxiliar en Educación para la Primera Infancia</a></li>
+                <li><a class="dropdown-item" href="paginas/index.php?pro=SeguridadOcupacional"><i class="fa fa-heartbeat"></i> Seguridad ocupacional y laboral</a></li>
+                <li><a class="dropdown-item" href="paginas/index.php?pro=AuxiliarAdministrativo"><i class="fa fa-line-chart"></i> Auxiliar Administrativo</a></li>
+                <li><a class="dropdown-item" href="paginas/index.php?pro=AuxiliarRecursosHumanos"><i class="fa fa-empire"></i> Auxiliar en Recursos Humanos</a></li>
+                <li><a class="dropdown-item" href="paginas/index.php?pro=AuxiliarContable"><i class="fa fa-money"></i> Auxiliar Contable y Financiero</a></li>
+                <li><a class="dropdown-item" href="paginas/index.php?pro=AuxiliarPrimeraInfancia"><i class="fa fa-child"></i> Auxiliar en Educación para la Primera Infancia</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-comments-o"></i> Auxiliar En Mercadeo Y Ventas</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-plug"></i> Electricidad residencial</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-medkit"></i> Auxiliar en Servicios Farmacéuticos en Convenio con CEPRODENT</a></li>
@@ -184,7 +185,7 @@
             <div class="card-body">
               <h2 class="card-title" style="color: #c00000;">Seguridad ocupacional y laboral</h2>
               <p class="card-text">El técnico en SEGURIDAD OCUPACIONAL Y LABORAL de FUNTEDCOL estará en la capacidad de Apoyar la inspección, capacitaciones, manejo de indicadores de gestión y condiciones de los lugares de trabajo, SG-SST, además tramitan las incapacidades ante las administradoras de riesgo, procesan información y ayudan en las actividades de los sistemas de seguridad en el trabajo, ambientales y de seguridad industrial. Están empleados por empresas públicas y privadas.</p>
-              <a href="programas/index.php?pro=SeguridadOcupacional" class="btn btn-danger">Ver más</a>              
+              <a href="paginas/index.php?pro=SeguridadOcupacional" class="btn btn-danger">Ver más</a>              
             </div>
           </div>
           <div class="card mx-2" style="width: 25rem;">
@@ -193,7 +194,7 @@
               
               <h2 class="card-title" style="color: #c00000;">Auxiliar administrativo</h2>
               <p class="card-text">La carrera en AUXILIAR ADMINISTRATIVO de FUNTEDCOL forma técnicos laborales que están en la capacidad de realizar actividades de organización y gestión de archivos, servicio al cliente, entre otras. Además tiene las competencias para registrar las operaciones contables de una compañía, elaborar la nómina y hacer análisis financieros.</p>
-              <a href="programas/index.php?pro=AuxiliarAdministrativo" class="btn btn-danger">Ver más</a>
+              <a href="paginas/index.php?pro=AuxiliarAdministrativo" class="btn btn-danger">Ver más</a>
             </div>
           </div>
           <div class="card mx-2" style="width: 25rem;">
@@ -202,7 +203,7 @@
               
               <h2 class="card-title" style="color: #c00000;">Auxiliar Contable y Financiero</h2>
               <p class="card-text">La carrera técnica de Auxiliar Contable y Financiero de FUNTEDCOL Realizan la medición y reconocimiento de las transacciones contables y financieras, realizan procesos de liquidación de impuestos, cuantifican costos y registran las operaciones de flujos monetarios, verifican inventarios, depuran y apoyan la elaboración de informes, comprobantes y documentos relacionados con empresa o personas naturales. Son empleados por el sector público y privado.</p>
-              <a href="programas/index.php?pro=AuxiliarContable" class="btn btn-danger">Ver más</a>
+              <a href="paginas/index.php?pro=AuxiliarContable" class="btn btn-danger">Ver más</a>
             </div>
           </div>
           <div class="card mx-2" style="width: 25rem;">
@@ -314,6 +315,7 @@
       </div>
       <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('uploads/barra_03.jpg');" id="himno">    
         <h1 style="color: #000;text-align: center; font-size: 3em; margin-bottom:40px;">HIMNO</h1>
+        <hr>
         <div class="container">
           <div class="row text-center align-items-center">
             <div class="col-md-6 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
@@ -567,6 +569,7 @@
     </div>	
   </div>
   <hr>
+  
   <footer class="mt-5" style="display: flex; justify-content: center; flex-flow:column nowrap; background: linear-gradient(245deg,#c00000,#ed3237); color: #fff; text-align: center; padding: 60px;">
     <p>
       Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; </br>

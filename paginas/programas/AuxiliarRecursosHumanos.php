@@ -9,7 +9,13 @@
                 <div class="card-body">                  
                     <p class="card-text" style="color: #000;font-size: 1.2em;line-height:2.5em;">
                     La carrera técnica de Auxiliar en Recursos Humanos de FUNTEDCOL forma técnicos laborales con competencias para la asistencia en los procesos de selección, vinculación, contratación y capacitación del personal. También, con competencias para apoyar al profesional en gestión humana en los procesos de manejo de personal, además apoyan a los profesionales y asistentes de talento humano. Recopilan, actualizan y tramitan información de los procesos de gestión humana. Están empleados por departamentos de personal en el sector público y privado.
-                    </p>              
+                    </p>  
+                    <button type="button" class="btn btn-danger  m-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                      Preinscríbete  <i class="fa fa-file-text"></i>
+                    </button>   
+                    <button type="button" class="btn btn-info m-3" data-bs-toggle="modal" data-bs-target="#modalTelefono">
+                      Llamanos <i class="fa fa-phone"></i>
+                    </button>             
                 </div>
               </div>
             </div>

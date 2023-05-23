@@ -97,11 +97,12 @@
                 <i class="fa fa-university"></i> Institución
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#quienesSomos"><i class="fa fa-building"></i> Quines somos</a></li>
-                <li><a class="dropdown-item" href="#mision"><i class="fa fa-compass"></i> Misión</a></li>
-                <li><a class="dropdown-item" href="#vision"><i class="fa fa-eye"></i> Visión</a></li>
-                <li><a class="dropdown-item" href="#simbolos"><i class="fa fa-flag"></i> Símbolos institucionales</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-book"></i> Licencia y resoluciones</a></li>
+              <li><a class="dropdown-item" href="../#quienesSomos"><i class="fa fa-building"></i> Quines somos</a></li>
+                <li><a class="dropdown-item" href="../#mision"><i class="fa fa-compass"></i> Misión</a></li>
+                <li><a class="dropdown-item" href="../#vision"><i class="fa fa-eye"></i> Visión</a></li>
+                <li><a class="dropdown-item" href="../#simbolos"><i class="fa fa-flag"></i> Símbolos institucionales</a></li>
+                <li><a class="dropdown-item" href="../#licencia"><i class="fa fa-book"></i> Licencia y resoluciones</a></li>
+                <li><a class="dropdown-item" href="index.php?pag=administracion"><i class="fa fa-sitemap"></i> Administracion</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -140,12 +141,60 @@
     </nav>
     <div>
       <?php
+      if(isset($_REQUEST['pro'])){
         $pagina = $_REQUEST['pro'];
+        include "programas/$pagina.php";
+      }else{
+        $pagina = $_REQUEST['pag'];
         include "$pagina.php";
+      }
        
       ?>
     </div>                
  <hr>
+ <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalCenterTitle">Formulario de Preinscripción</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Déjanos tus datos y te llamaremos a darte una asesoría personalizada. 
+          Recuerda que la preinscripción no tiene ningún costo y no te compromete a realizar el proceso de matrícula.
+        </p>
+        <hr>
+        <?php
+          include("programas/preinscripcion.php");
+        ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Preisncribirme</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalTelefono" tabindex="-2" aria-labelledby="modalTelefonoTitle" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modalTelefonoTitle">Nuestra Línea de Servicio al Cliente</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Llama al siguiente número: <h3>(+57) 324 294 3174</h3> 
+        </p>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div> <!-- -->
   <footer class="mt-5" style="display: flex; justify-content: center; flex-flow:column nowrap; background: linear-gradient(245deg,#c00000,#ed3237); color: #fff; text-align: center; padding: 60px;">
     <p>
       Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; </br>

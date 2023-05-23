@@ -9,7 +9,13 @@
                 <div class="card-body">                  
                     <p class="card-text" style="color: #000;font-size: 1.2em;line-height:2.5em;">
                     El técnico en SEGURIDAD OCUPACIONAL Y LABORAL de FUNTEDCOL estará en la capacidad de Apoyar la inspección, capacitaciones, manejo de indicadores de gestión y condiciones de los lugares de trabajo, SG-SST, además tramitan las incapacidades ante las administradoras de riesgo, procesan información y ayudan en las actividades de los sistemas de seguridad en el trabajo, ambientales y de seguridad industrial. Están empleados por empresas públicas y privadas.
-                    </p>              
+                    </p>  
+                    <button type="button" class="btn btn-danger  m-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                      Preinscríbete  <i class="fa fa-file-text"></i>
+                    </button>   
+                    <button type="button" class="btn btn-info m-3" data-bs-toggle="modal" data-bs-target="#modalTelefono">
+                      Llamanos <i class="fa fa-phone"></i>
+                    </button>             
                 </div>
               </div>
             </div>

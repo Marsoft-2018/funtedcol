@@ -9,7 +9,13 @@
                 <div class="card-body">                  
                     <p class="card-text" style="color: #000;font-size: 1.2em;line-height:1.8em;">
                       La carrera AUXILIAR EN PRIMERA INFANCIA de FUNTEDCOL estará en capacidad de cuidar y atender niños de edad preescolar en sus espacios recreativos y educativos, suministrándoles alimentos y loncheras, haciendo acompañamiento en sus juegos y asistiendo al profesor en la programación de clases; el auxiliar apoyara en el cuidado de los derechos de la primera infancia con especial énfasis en el desarrollo integral del niño, basado en la construcción de autonomía y competencias a través de proyectos y otras técnicas didácticas, además Prestan servicio de apoyo en actividades educativas bajo la supervisión de un educador infantil, orientadas a promover el desarrollo integral de las niñas y los niños en la educación inicial y pre-escolar. Están empleados por centros de desarrollo infantil, jardines infantiles, preescolares, guarderías, escuelas, centros de estimulación, sala cunas, sala materna, hogares comunitarios, museos, bibliotecas, ludotecas, parques, entre otros.
-                    </p>              
+                    </p>   
+                    <button type="button" class="btn btn-danger  m-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                      Preinscríbete  <i class="fa fa-file-text"></i>
+                    </button>   
+                    <button type="button" class="btn btn-info m-3" data-bs-toggle="modal" data-bs-target="#modalTelefono">
+                      Llamanos <i class="fa fa-phone"></i>
+                    </button>            
                 </div>
               </div>
             </div>

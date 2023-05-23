@@ -1,19 +1,25 @@
 <div id="simbolos" class="parallax section lb" data-stellar-background-ratio="0.7"  style="background:linear-gradient(230deg,#fff,#fff); ">
         <div class="container wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.6s">
           <div class="section-title text-center">
-              <h3>Auxiliar Contable y Financiero</h3>
+              <h3>Auxiliar Administrativo</h3>
           </div><!-- end title -->
           <div class="row">
-            <div class="col-md-6 wow fadeInLeft simbolo" data-wow-duration="1.5s" data-wow-delay="0.2s">
+            <div class="col-md-6  animate__animated animate__slideInLeft --animate-delay: 0.9s;" data-wow-duration="1.5s" data-wow-delay="0.2s">
               <div class="card mb-4 shadow-sm imgSimbolo">
                 <div class="card-body">                  
                     <p class="card-text" style="color: #000;font-size: 1.2em;line-height:2.5em;">
-                    La carrera técnica de Auxiliar Contable y Financiero de FUNTEDCOL Realizan la medición y reconocimiento de las transacciones contables y financieras, realizan procesos de liquidación de impuestos, cuantifican costos y registran las operaciones de flujos monetarios, verifican inventarios, depuran y apoyan la elaboración de informes, comprobantes y documentos relacionados con empresa o personas naturales. Son empleados por el sector público y privado.
-                    </p>              
+                    La carrera en AUXILIAR ADMINISTRATIVO de FUNTEDCOL forma técnicos laborales que están en la capacidad de realizar actividades de organización y gestión de archivos, servicio al cliente, entre otras. Además tiene las competencias para registrar las operaciones contables de una compañía, elaborar la nómina y hacer análisis financieros.
+                    </p> 
+                    <button type="button" class="btn btn-danger  m-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                      Preinscríbete  <i class="fa fa-file-text"></i>
+                    </button>   
+                    <button type="button" class="btn btn-info m-3" data-bs-toggle="modal" data-bs-target="#modalTelefono">
+                      Llamanos <i class="fa fa-phone"></i>
+                    </button>             
                 </div>
               </div>
             </div>
-            <div class="col-md-6 wow fadeInRight " data-wow-duration="1.5s" data-wow-delay="0.3s">
+            <div class="col-md-6  animate__animated animate__slideInRight --animate-delay: 0.9s; " data-wow-duration="1.5s" data-wow-delay="0.3s">
               <div>
               <img src="../img/administrativo.jpg" class="card-img-top" alt="..." style="border-radius:10% 0px 10% 0px; box-shadow:10px 0px 0px #000:">
               </div>
@@ -31,13 +37,11 @@
                   <div class="row">
                       <div class="col-12">
                       <ul style="color: #000; font-size: 1.3em;">              
-                        <li> Medir y reconocer los recursos financieros de acuerdo con la normativa vigente.</li>
-                        <li> Elaborar y seleccionar información de los procesos de liquidación tributaría según procedimientos y normativa fiscal vigente.</li>
-                        <li> Identificar los costos de operaciones de acuerdo con métodos vigentes de la entidad u organización.</li>
-                        <li> Registrar información de procesos contables y financieros usando sistemas manuales y/o electrónicos de acuerdo con políticas organizacionales u institucionales vigentes.</li>
-                        <li> Elaborar informes y reportes del área de acuerdo con procedimientos y políticas organizacionales u institucionales vigentes.</li>
-                        <li> Organizar y archivar documentos del área de contabilidad y finanzas de acuerdo con normativa vigente.</li>
-                        <li> Atender clientes del área de acuerdo con normas técnicas y políticas institucionales vigentes.</li>
+                        <li> Mantener los documentos de gestión de acuerdo con normativa y proceso administrativo.</li>
+                        <li> Atender clientes de acuerdo con procedimiento de servicios y normativa.</li>
+                        <li> Realizar actividades de digitación de acuerdo con estándares y procedimientos técnicos.</li>
+                        <li> Elaborar documentos de la unidad administrativa de acuerdo con lineamientos de la organización, guía y procedimientos técnicos.</li>
+                        <li> Tramitar pedidos de la unidad administrativa de acuerdo al procedimiento técnico.</li>
                       </ul>  
                       </div>
                   </div>
@@ -47,11 +51,11 @@
                           <div class="card-body">
                           <h2 class="card-title" style="color: #c00000;font-size:1.8em;">Conocimientos</h2>
                               <ul>
-                                <li>•	Economía y contabilidad</li>
+                                <li>•	Servicios de oficina y administrativos</li>
+                                <li>•	Servicio al cliente</li>
+                                <li>•	Computadoras y electrónica</li>
                                 <li>•	Matemáticas</li>
                                 <li>•	Idioma extranjero</li>
-                                <li>•	Normas de Contabilidad e Información Financiera, auditoria y aseguramiento de la Información, tributaria y demás del sector privado y/o público</li>
-                                <li>•	Finanzas</li>
                               </ul>
                           </div>
                       </div>
@@ -59,22 +63,11 @@
                           <div class="card-body">
                               <h2 class="card-title" style="color: #c00000;font-size:1.8em;">Perfil ocupacional</h2>
                               <ul>
-                                <li>•	Auxiliar contabilidad cooperativa</li>
-                                <li>•	Auxiliar contabilidad de costos</li>
-                                <li>•	Auxiliar contabilidad hotelera</li>
-                                <li>•	Auxiliar contable</li>
-                                <li>•	Auxiliar contable y administrativo</li>
-                                <li>•	Auxiliar contable y financiero</li>
-                                <li>•	Auxiliar costos</li>
-                                <li>•	Auxiliar cuentas por cobrar</li>
-                                <li>•	Auxiliar cuentas por pagar</li>
-                                <li>•	Auxiliar facturación</li>
-                                <li>•	Auxiliar facturación e. P. S.</li>
-                                <li>•	Auxiliar financiero</li>
-                                <li>•	Auxiliar presupuesto</li>
-                                <li>•	Auxiliar tesorería</li>
-                                <li>•	Auxiliar trámite cuentas</li>
-                                <li>•	Auxiliares contables, de tesorería y financieros</li>
+                                <li>•	Auxiliar administrativo</li>
+                                <li>•	Auxiliar de actas (O&G) (Res. 2616/2016)</li>
+                                <li>•	Auxiliar oficina</li>
+                                <li>•	Auxiliares administrativos</li>
+                                <li>•	Oficinista</li>
                               </ul>
                           </div>
                       </div>
@@ -92,12 +85,12 @@
                 <label for="">Conoce los módulos que verás en cada uno de los semestres.</label>
                 <hr>
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-6  animate__animated animate__slideInDown --animate-delay: 0.9s;">
                     <img src="../img/Imagen7.png" alt="" style="margin-top:50px;width:100%;  border-radius:0px 0px 10% 0px; box-shadow:10px 0px 0px #c00;">                          
                   </div>
                   <div class="col-6" style="margin-top:50px;">
-                    <div class="row">
-                    <div class="card mx-4 my-2  shadow-sm " style="width: 35rem;">
+                    <div class="row  animate__animated animate__slideInRight --animate-delay: 0.9s;">
+                      <div class="card mx-4 my-2  shadow-sm " style="width: 35rem;">
                           <div class="card-body">
                           <h2 class="card-title" style="color: #c00000;font-size:1.2em;">Primer Semestre</h2>
                               <ul>
@@ -111,8 +104,8 @@
                           </div>
                       </div>
                     </div>
-                    <div class="row">
-                    <div class="card mx-4 my-2 shadow-sm " style="width: 35rem;">
+                    <div class="row  animate__animated animate__slideInRight --animate-delay: 0.9s;">
+                      <div class="card mx-4 my-2 shadow-sm " style="width: 35rem;">
                           <div class="card-body">
                           <h2 class="card-title" style="color: #c00000;font-size:1.2em;">Segundo Semestre</h2>
                               <ul>
