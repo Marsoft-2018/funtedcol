@@ -19,6 +19,7 @@
             var_dump($objPreinscripcion->cargar());
             break;
         case "Agregar": case "Modificar":
+            
                 $objPreinscripcion = new Preinscripcion();   
                 if(isset($_REQUEST['id'])){
                     $objPreinscripcion->id       =  $_POST['id'];
@@ -34,6 +35,7 @@
                 $objPreinscripcion->email = $_POST['email'];
                 if ($accion == "Agregar") {
                     $objPreinscripcion->agregar();
+                    include("../email/enviar.php");
                 }else{
                     $objPreinscripcion->modificar();
                 }

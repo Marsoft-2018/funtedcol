@@ -2,7 +2,7 @@
     require("../php/Modelo/conexion.php");
     require("../php/Modelo/programa.php");
 ?>
-<form action="" onsubmit="return preinscribir()">
+<!-- <form  onsubmit=""> -->
     <div>
         <div class="row">
             <div class="col mb-3">
@@ -68,11 +68,11 @@
     
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="submit" class="btn btn-primary">Preisncribirme</button>
+        <button type="button" class="btn btn-primary" onclick="preinscribir()">Preisncribirme</button>
       </div>
         <div class="row">
             <div class="col" id="respuesta">
                 
             </div>
         </div>
-</form>
+<!-- </form> -->

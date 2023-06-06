@@ -80,11 +80,8 @@ $mensaje = '
         </div>
     </body>
 </html>';
-
+echo "Hola desde el enviar";
 require("config_email.php");
-require("../../Modelo/conexion.php");
-require("../../Modelo/preinscripcion.php");
-include("../../Controladores/preinscripcionController.php");
 $obj = new Correo();
 //$obj->para = "info@funtedcol.com.co";
 $obj->para = "josealf7@gmail.com";
