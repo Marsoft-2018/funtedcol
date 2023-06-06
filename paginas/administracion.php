@@ -1,7 +1,7 @@
-<div id="simbolos" class="parallax section lb" data-stellar-background-ratio="0.7"  style="background:linear-gradient(230deg,#fff,#fff); ">
+<div id="simbolos" class="parallax section lb" data-stellar-background-ratio="0.2" style="background-image:url('img/fondos/fondo3.png'); ">
         <div class="container wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.6s">
           <div class="section-title text-center">
-              <h3>Personal Administrativo</h3>
+              <h3>PERSONAL ADMINISTRATIVO</h3>
           </div><!-- end title -->
           <div class="row" style="display: flex; justify-content:center;">
               <div class="card m-4 shadow-sm animate__animated animate__slideInLeft --animate-delay: 0.9s;" style="width: 20rem;">

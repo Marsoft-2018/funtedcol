@@ -20,7 +20,9 @@
             break;
         case "Agregar": case "Modificar":
                 $objPreinscripcion = new Preinscripcion();   
-                $objPreinscripcion->id       =  $_POST['id'];
+                if(isset($_REQUEST['id'])){
+                    $objPreinscripcion->id       =  $_POST['id'];
+                }
                 $objPreinscripcion->PrimerNombre = $_POST['PrimerNombre'];
                 $objPreinscripcion->SegundoNombre = $_POST['SegundoNombre'];
                 $objPreinscripcion->PrimerApellido = $_POST['PrimerApellido'];

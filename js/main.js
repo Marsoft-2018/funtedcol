@@ -43,16 +43,27 @@ function galeria(){
 
 }
 
-function contacto(){
-    let accion = "Contacto";
-    let nombre = $("#nombre").val();
+function preinscribir(){
+    let accion = "agregar";
+    let primerNombre = $("#priNombre").val();
+    let segundoNombre = $("#segNombre").val();
+    let primerApellido = $("#priApellido").val();
+    let segundoApellido = $("#segApellido").val();
     let email = $("#email").val();
-    let telefono = $("#telefono").val();
-    let mensaje = $("#mensaje").val();
+    let celular = $("#celular").val();
+    let programa = $("#programa").val();
     $.ajax({
-        url: "php/enviar_email.php",
+        url: "../php/enviar.php",
         type: "post",
-        data:{accion:accion,nombre:nombre,email:email,telefono:telefono,mensaje:mensaje},
+        data:{
+            primerNombre : primerNombre,
+            segundoNombre : segundoNombre,
+            primerApellido : primerApellido,
+            segundoApellido : segundoApellido,
+            email : email,
+            celular : celular,
+            programa : programa
+        },
         success:function(data){
             $("#respuesta").html(data);
         },
