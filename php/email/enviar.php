@@ -68,13 +68,13 @@ $mensaje = '
         <div class="card">
           <h5>PREINSCRIPCION DESDE LA PAGINA</h5>
           <div class="card-body">
-            <h5 class="card-title">PROGRAMA: '.$programa.'</h5>
+            <h5 class="card-title">PROGRAMA: '.$data['programa'].'</h5>
             <p class="card-text">
                 Datos de contacto:<br><br>
-                Fecha: '.date().'<br>
-                Nombre: '.$primerNombre.' '.$segundoNombre.' '.$primerApellido.' '.$segundoApellido.'<br>
-                celular: '.$celular.' 
-                Email: '.$email.'
+                Fecha: '.Date().'<br>
+                Nombre: '.$data['primerNombre'].' '.$data['segundoNombre'].' '.$data['primerApellido'].' '.$data['segundoApellido'].'<br>
+                celular: '.$data['telefono'].' 
+                Email: '.$data['email'].'
             </p>            
           </div>
         </div>

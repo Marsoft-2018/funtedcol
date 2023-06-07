@@ -1,12 +1,13 @@
 <?php
-    require("../modelo/conexion.php");
-    require("../modelo/preinscripcion.php");
+    require("../Modelo/conexion.php");
+    require("../Modelo/preinscripcion.php");
     
-
+    $request_body = file_get_contents('php://input');
+    $data = json_decode($request_body, true);
 
     $accion = "";
-    if(isset($_REQUEST['accion'])){
-        $accion = $_REQUEST['accion'];
+    if(isset($data['accion'])){
+        $accion = $data['accion'];
     }
 
     switch ($accion) {
@@ -21,21 +22,22 @@
         case "Agregar": case "Modificar":
             
                 $objPreinscripcion = new Preinscripcion();   
-                if(isset($_REQUEST['id'])){
-                    $objPreinscripcion->id       =  $_POST['id'];
+                if(isset($data['id'])){
+                    $objPreinscripcion->id       =  $data['id'];
                 }
-                $objPreinscripcion->PrimerNombre = $_POST['PrimerNombre'];
-                $objPreinscripcion->SegundoNombre = $_POST['SegundoNombre'];
-                $objPreinscripcion->PrimerApellido = $_POST['PrimerApellido'];
-                $objPreinscripcion->SegundoApellido = $_POST['SegundoApellido'];
-                $objPreinscripcion->tipoDocumento = $_POST['tipoDocumento'];
-                $objPreinscripcion->documento = $_POST['documento'];
-                $objPreinscripcion->programa = $_POST['programa'];
-                $objPreinscripcion->telefono = $_POST['telefono'];
-                $objPreinscripcion->email = $_POST['email'];
+                $objPreinscripcion->PrimerNombre = $data['primerNombre'];
+                $objPreinscripcion->SegundoNombre = $data['segundoNombre'];
+                $objPreinscripcion->PrimerApellido = $data['primerApellido'];
+                $objPreinscripcion->SegundoApellido = $data['segundoApellido'];
+                $objPreinscripcion->tipoDocumento = $data['tipoDocumento'];
+                $objPreinscripcion->documento = $data['documento'];
+                $objPreinscripcion->programa = $data['programa'];
+                $objPreinscripcion->telefono = $data['telefono'];
+                $objPreinscripcion->email = $data['email'];
                 if ($accion == "Agregar") {
                     $objPreinscripcion->agregar();
                     include("../email/enviar.php");
+                    //echo "Esta en la opcion agregar del controlador";
                 }else{
                     $objPreinscripcion->modificar();
                 }
@@ -47,12 +49,12 @@
             break;
         case 'Eliminar':
             $objPreinscripcion = new Preinscripcion();
-            $objPreinscripcion->id = $_POST['id'];
+            $objPreinscripcion->id = $data['id'];
             $objPreinscripcion->eliminar();
             break;
         
         default:
-            # code...
+            echo "No llego ninguna acción";
             break;
     }
 ?>

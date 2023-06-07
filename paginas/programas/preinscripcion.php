@@ -26,8 +26,22 @@
         </div>
         <div class="row">
             <div class="col mb-3">
-                <label for="celular" class="form-label">Celular</label>
-                <input type="text" class="form-control" id="celular" placeholder="" required>
+                <label for="tipoDocumento" class="form-label">Tipo de documento</label>
+                <select class="form-control" id="tipoDocumento" required>
+                    <option value="">Seleccione...</option>
+                    <option value="TI">Tarjeta de identidad</option>
+                    <option value="CC">Cédula de ciudadanía</option>
+                </select>
+            </div>
+            <div class="col mb-3">
+                <label for="numeroDocumento" class="form-label">Numero de documento</label>
+                <input type="text" class="form-control" id="numeroDocumento" >
+            </div>        
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="telefono" class="form-label">Tel. Celular</label>
+                <input type="text" class="form-control" id="telefono" placeholder="" required>
             </div>
             <div class="col mb-3">
                 <label for="email" class="form-label">Email</label>
