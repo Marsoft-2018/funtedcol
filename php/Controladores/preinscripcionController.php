@@ -1,5 +1,6 @@
 <?php
     require("../Modelo/conexion.php");
+    require("../Modelo/programa.php");
     require("../Modelo/preinscripcion.php");
     
     $request_body = file_get_contents('php://input');
@@ -20,7 +21,13 @@
             var_dump($objPreinscripcion->cargar());
             break;
         case "Agregar": case "Modificar":
-            
+            $objPrograma = new Programa();
+            $objPrograma->id = $data['programa'];
+            $programa = "";
+            foreach ($objPrograma->cargar() as $campo) {
+                $programa = $campo['nombre'];
+            }
+
                 $objPreinscripcion = new Preinscripcion();   
                 if(isset($data['id'])){
                     $objPreinscripcion->id       =  $data['id'];
@@ -35,8 +42,9 @@
                 $objPreinscripcion->telefono = $data['telefono'];
                 $objPreinscripcion->email = $data['email'];
                 if ($accion == "Agregar") {
-                    $objPreinscripcion->agregar();
-                    include("../email/enviar.php");
+                    if($objPreinscripcion->agregar()){
+                        include("../email/enviar.php");
+                    }
                     //echo "Esta en la opcion agregar del controlador";
                 }else{
                     $objPreinscripcion->modificar();

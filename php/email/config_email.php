@@ -3,14 +3,13 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
     
-    require 'PHPMailer/src/Exception.php';
-    require 'PHPMailer/src/PHPMailer.php';
-    require 'PHPMailer/src/SMTP.php';
+    require 'PHPMailer/Exception.php';
+    require 'PHPMailer/PHPMailer.php';
+    require 'PHPMailer/SMTP.php';
 
 class Correo{
     public $para;
     public $conCopia;
-    public $conCopia2;
     public $asunto;
     public $mensaje;
     
@@ -24,13 +23,17 @@ class Correo{
             $mail->isSMTP();  
             $mail->Host       = 'mail.funtedcol.com.co';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'info@funtedcol.com.co';
-            $mail->Password   = 'funtedcol2033!';
+            //$mail->Username   = 'pruebas@funtedcol.com.co';
+            //$mail->Password   = 'Josealf7*2023';
+            
+            $mail->Username   = 'preinscripciones@funtedcol.com.co';
+            $mail->Password   = 'Preinscripciones2023*';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
         
             //Recipients
-            $mail->setFrom('info@funtedcol.com.co', 'Preinscripción');
+            //$mail->setFrom('pruebas@funtedcol.com.co', 'Preinscripción');
+            $mail->setFrom('preinscripciones@funtedcol.com.co', 'Preinscripción');
             $mail->addAddress($this->para); 
             /*
             //Attachments
@@ -43,11 +46,11 @@ class Correo{
             $mail->Subject = $this->asunto;
             $mail->Body    = $this->mensaje;
         
-            if($mail->send()){
-                echo 'Mensaje enviado con éxito';
-            }else{
-                echo 'Error el Mensaje no pudo ser enviado';
-            }
+            // if($mail->send()){
+            //     echo 'Mensaje enviado con éxito';
+            // }else{
+            //     echo 'Error el Mensaje no pudo ser enviado';
+            // }
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }

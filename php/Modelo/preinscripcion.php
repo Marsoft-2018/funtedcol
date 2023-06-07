@@ -53,7 +53,11 @@
             $stm->bindparam(8,$this->telefono);
             $stm->bindparam(9,$this->email);
             if($stm->execute()){
-                echo "Registro agregado con éxito";
+                echo "<div class='alert alert-success' role='alert'>
+                    Gracias por realizar tu preinscripción pronto nos pondremos en contacto contigo.<br>
+                    Te has preinscrito con éxito.<br>
+                </div>";
+                return true;
             }
         } catch (PDOException $e) {
             print "Error, no se pudo agregar los datos, ".$e;

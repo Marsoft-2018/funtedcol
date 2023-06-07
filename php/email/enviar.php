@@ -1,4 +1,7 @@
 <?php
+$objFecha = new DateTime('NOW');
+$fecha = $objFecha->format('c');
+
 $mensaje = '
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -68,10 +71,10 @@ $mensaje = '
         <div class="card">
           <h5>PREINSCRIPCION DESDE LA PAGINA</h5>
           <div class="card-body">
-            <h5 class="card-title">PROGRAMA: '.$data['programa'].'</h5>
+            <h5 class="card-title">PROGRAMA: '.$programa.'</h5>
             <p class="card-text">
                 Datos de contacto:<br><br>
-                Fecha: '.Date().'<br>
+                Fecha: '.$fecha.'<br>
                 Nombre: '.$data['primerNombre'].' '.$data['segundoNombre'].' '.$data['primerApellido'].' '.$data['segundoApellido'].'<br>
                 celular: '.$data['telefono'].' 
                 Email: '.$data['email'].'
