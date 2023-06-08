@@ -31,6 +31,8 @@
                     <option value="">Seleccione...</option>
                     <option value="TI">Tarjeta de identidad</option>
                     <option value="CC">Cédula de ciudadanía</option>
+                    <option value="CE">Cédula de extranjería</option>
+                    <option value="NES">Número de Secretaría</option>
                 </select>
             </div>
             <div class="col mb-3">

@@ -46,7 +46,8 @@ class Correo{
             $mail->Subject = $this->asunto;
             $mail->Body    = $this->mensaje;
         
-            // if($mail->send()){
+            $mail->send();
+            // if(){
             //     echo 'Mensaje enviado con éxito';
             // }else{
             //     echo 'Error el Mensaje no pudo ser enviado';

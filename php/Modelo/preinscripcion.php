@@ -15,7 +15,7 @@
     private $sql;
     private $datos;
     public function listar(){
-        $this->sql = "SELECT * FROM inscripciones";
+        $this->sql = "SELECT * FROM inscripciones WHERE estado = 1";
         try {
             $stm = $this->conexion->prepare($this->sql);
             $stm->execute();
@@ -60,7 +60,11 @@
                 return true;
             }
         } catch (PDOException $e) {
-            print "Error, no se pudo agregar los datos, ".$e;
+            echo "<div class='alert alert-danger' role='alert'>
+                    Tienes problemas para preinscribirte?<br>
+                    Si no puedes realizar el proceso desde la página puedes ponerte en contacto con nosotros desde nuestra líena de atención<br>
+                    con gusto te ayudaremos.
+                </div>";
         }
     }
 

@@ -45,7 +45,7 @@ function galeria(){
 
 function preinscribir(){
     var mensaje = document.getElementById('respuesta');
-        let accion = "Agregar";
+    let accion = "Agregar";
     let primerNombre = document.getElementById("priNombre").value;
     let segundoNombre = document.getElementById("segNombre").value;
     let primerApellido = document.getElementById("priApellido").value;
@@ -69,11 +69,8 @@ function preinscribir(){
         })
         .then(function(res) {
           if(res.status==200) {
-            
-          console.log(res.data);
             mensaje.innerHTML = res.data;
           }
-          console.log(res);
         })
         .catch(function(err) {
           mensaje.innerText = 'Error de conexión ' + err;
