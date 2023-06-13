@@ -41,8 +41,9 @@
                 $objPreinscripcion->programa = $data['programa'];
                 $objPreinscripcion->telefono = $data['telefono'];
                 $objPreinscripcion->email = $data['email'];
+                $objPreinscripcion->estado = $data['estado'];
                 if ($accion == "Agregar") {
-                    if($objPreinscripcion->agregar()){
+                    if($objPreinscripcion->agregar() && $objPreinscripcion->estado == 1){
                         include("../email/enviar.php");
                     }
                     //echo "Esta en la opcion agregar del controlador";
@@ -60,6 +61,14 @@
             $objPreinscripcion->id = $data['id'];
             $objPreinscripcion->eliminar();
             break;
+        case 'cambiarEstado':
+            $objPreinscripcion = new Preinscripcion();
+            $objPreinscripcion->id = $data['id'];
+            $objPreinscripcion->estado = $data['estado'];
+            $objPreinscripcion->cambiarEstado();
+            break;
+
+            
         
         default:
             echo "No llego ninguna acción";

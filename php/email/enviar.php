@@ -83,7 +83,7 @@ $mensaje = '
         </div>
     </body>
 </html>';
-echo "Hola desde el enviar";
+//echo "Hola desde el enviar";
 require("config_email.php");
 $obj = new Correo();
 //$obj->para = "info@funtedcol.com.co";

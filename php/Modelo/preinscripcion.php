@@ -15,7 +15,7 @@
     private $sql;
     private $datos;
     public function listar(){
-        $this->sql = "SELECT * FROM inscripciones WHERE estado = 1";
+        $this->sql = "SELECT * FROM inscripciones WHERE estado = '".$this->estado."'";
         try {
             $stm = $this->conexion->prepare($this->sql);
             $stm->execute();
@@ -40,7 +40,7 @@
     }
 
     public function agregar(){
-        $this->sql = "INSERT INTO inscripciones(PrimerNombre,SegundoNombre,PrimerApellido,SegundoApellido,tipoDocumento,documento,programa,telefono,email) VALUES(?,?,?,?,?,?,?,?,?)";
+        $this->sql = "INSERT INTO inscripciones(PrimerNombre,SegundoNombre,PrimerApellido,SegundoApellido,tipoDocumento,documento,programa,telefono,email,estado) VALUES(?,?,?,?,?,?,?,?,?,?)";
           try {
             $stm = $this->conexion->prepare($this->sql);
             $stm->bindparam(1,$this->PrimerNombre);
@@ -52,6 +52,7 @@
             $stm->bindparam(7,$this->programa);
             $stm->bindparam(8,$this->telefono);
             $stm->bindparam(9,$this->email);
+            $stm->bindparam(10,$this->estado);
             if($stm->execute()){
                 echo "<div class='alert alert-success' role='alert'>
                     Gracias por realizar tu preinscripción pronto nos pondremos en contacto contigo.<br>
@@ -69,7 +70,7 @@
     }
 
     public function modificar(){
-        $this->sql = "UPDATE inscripciones SET PrimerNombre =?,SegundoNombre =?,PrimerApellido =?,SegundoApellido =?,tipoDocumento =?,documento =?,programa =?,telefono =?,email =? WHERE id = ?";
+        $this->sql = "UPDATE inscripciones SET PrimerNombre =?,SegundoNombre =?,PrimerApellido =?,SegundoApellido =?,tipoDocumento =?,documento =?,programa =?,telefono =?,email =?, estado =?  WHERE id = ?";
           try {
             $stm = $this->conexion->prepare($this->sql);
             $stm->bindparam(1,$this->PrimerNombre);
@@ -81,12 +82,37 @@
             $stm->bindparam(7,$this->programa);
             $stm->bindparam(8,$this->telefono);
             $stm->bindparam(9,$this->email);
-            $stm->bindparam(10,$this->id);         
+            $stm->bindparam(10,$this->estado);
+            $stm->bindparam(11,$this->id);         
             if($stm->execute()){
-                echo "Registro modificado con éxito";
+                echo "<div class='alert alert-success' role='alert'>
+                    Registro modificado con éxito.<br>
+                </div>";
             }
         } catch (PDOException $e) {
-            print "Error, no se pudo modificar los datos, ".$e;
+            echo "<div class='alert alert-danger' role='alert'>
+                    Error al tratar de modificar el registro<br>
+                    ".$e."
+                </div>";
+        }
+    }
+
+    public function cambiarEstado(){
+        $this->sql = "UPDATE inscripciones SET estado =?  WHERE id = ?";
+          try {
+            $stm = $this->conexion->prepare($this->sql);
+            $stm->bindparam(1,$this->estado);
+            $stm->bindparam(2,$this->id);         
+            if($stm->execute()){
+                echo "<div class='alert alert-success' role='alert'>
+                    Registro modificado con éxito.<br>
+                </div>";
+            }
+        } catch (PDOException $e) {
+            echo "<div class='alert alert-danger' role='alert'>
+                    Error al tratar de modificar el registro<br>
+                    ".$e."
+                </div>";
         }
     }
 
@@ -96,10 +122,15 @@
             $stm = $this->conexion->prepare($this->sql);
             $stm->bindparam(1,$this->id);         
             if($stm->execute()){
-                echo "Registro eliminado con éxito";
+                echo "<div class='alert alert-success' role='alert'>
+                    Registro elimidado con éxito.<br>
+                </div>";
             }
         } catch (PDOException $e) {
-            print "Error, no se pudo eliminar los datos, ".$e;
+            echo "<div class='alert alert-danger' role='alert'>
+                    Error al tratar de eliminar el registro<br>
+                    ".$e."
+                </div>";
         }
     }
 }

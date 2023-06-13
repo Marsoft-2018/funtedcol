@@ -53,72 +53,48 @@
         Sistema - control de preiscipciones, matriculas y certificaciones
     </h2>
   </header> 
-  <nav class="nav nav-pills nav-fill navbar-expand-lg">
-  <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-ticket"></i> Preinscripciones</a>
-  <a class="nav-link" href="#"><i class="fa fa-book"></i> Matriculas</a>
-  <a class="nav-link" href="#"><i class="fa fa-mortar-board"></i> Cerificaciones</a>
-</nav>  
-    <div id="modulos" style="padding:20px;">
-      <?php
-        $objPreinscripcion = new Preinscripcion();        
-      ?>
-
-      <table class="table table-striped table-sm data-table">
-        <thead>
-          <tr>
-            <th>Num</th>
-            <th>Primer Nombre</th>
-            <th>Segundo Nombre</th>
-            <th>Primer Apellido</th>
-            <th>Segundo Apellido</th>
-            <th>Tipo Documento</th>
-            <th>Numero Documento</th>
-            <th>Correo</th>
-            <th>Teléfono</th>
-            <th>Programa</th>
-            <th>Fecha de reg</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php
-            foreach ($objPreinscripcion->listar() as $preinscipcion) {    
-              $objPrograma = new Programa();
-              $objPrograma->id =  $preinscipcion['programa'];      
-          ?>
-          <tr>
-            <td><?php echo $preinscipcion['id']; ?></td>
-            <td><?php echo $preinscipcion['PrimerNombre']; ?></td>
-            <td><?php echo $preinscipcion['SegundoNombre']; ?></td>
-            <td><?php echo $preinscipcion['PrimerApellido']; ?></td>
-            <td><?php echo $preinscipcion['SegundoApellido']; ?></td>
-            <td><?php echo $preinscipcion['tipoDocumento']; ?></td>
-            <td><?php echo $preinscipcion['documento']; ?></td>
-            <td><?php echo $preinscipcion['email']; ?></td>
-            <td><?php echo $preinscipcion['telefono']; ?></td>            
-            <td>
-              <?php 
-                foreach ($objPrograma->cargar() as $programa) {
-                  echo $programa['nombre'];
-                }  
-              
-              ?>
-            </td>
-            <td><?php echo $preinscipcion['fechaIngreso']; ?></td>
-            <td>
-              <button class="btn btn-warning  btn-sm" onclick="editar('<?php echo $preinscipcion['id']; ?>')"><i class="fa fa-edit"> </i></button>
-              <button class="btn btn-danger btn-sm" onclick="eliminar('<?php echo $preinscipcion['id']; ?>')"><i class="fa fa-trash"> </i></button>
-              
-            </td>
-          </tr>
-          <?php
-            }
-          ?>
-        </tbody>
-      </table>
-
+  <nav class="nav nav-pills nav-fill navbar-expand-lg p-1">
+  <?php
+  $mod = 1;
+    if(isset($_GET['mod'])){
+      $mod = $_GET['mod'];
+    }
+  ?>
+    
+    <a class="nav-link <?php if($mod == 1){ echo 'active'; } ?>" aria-current="page" href="index.php?mod=1"><i class="fa fa-ticket"></i> Preinscripciones</a>
+    <a class="nav-link <?php if($mod == 2){ echo 'active'; } ?>" href="index.php?mod=2"><i class="fa fa-book"></i> Matriculas</a>
+    <a class="nav-link <?php if($mod == 3){ echo 'active'; } ?>" href="index.php?mod=3"><i class="fa fa-mortar-board"></i> Cerificaciones</a>
+  </nav> 
+  <div class="row">
+    <div class="col m-4">
+      <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-plus"> </i> Nuevo</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col p-5" id="respuesta"></div>
+  </div>
+    <div id="modulos" style="padding:20px; min-height: 450px;">        
+        <?php
+          include("listado.php");
+        ?>
+      
     </div>                
  <hr>
+ <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalCenterTitle">Formulario de registro</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">         
+        <?php
+          include("formulario.php");
+        ?>
+      </div>
+    </div>
+  </div>
+  </div>
   <footer class="mt-5" style="display: flex; justify-content: center; flex-flow:column nowrap; background: linear-gradient(245deg,#c00000,#ed3237); color: #fff; text-align: center; padding: 60px;">
     <p>
       Sistema - control de preiscipciones, matriculas y certificaciones
@@ -139,7 +115,7 @@
     -->
     
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../js/main.js"></script>
-
+  <script src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
