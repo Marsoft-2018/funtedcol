@@ -4,13 +4,26 @@
     public $nombre;
     public $descripcion;
     public $estado;
+    public $idCategoria;
     public $fecha_reg;
     private $sql;
     private $datos;
     public function listar(){
-        $this->sql = "SELECT * FROM programas";
+        $this->sql = "SELECT * FROM programas ORDER BY idCategoria, nombre ASC;";
         try {
             $stm = $this->conexion->prepare($this->sql);
+            $stm->execute();
+            $this->datos = $stm->fetchAll(PDO::FETCH_ASSOC);
+            return $this->datos;
+        } catch (PDOException $e) {
+            print "Error, no se pudo cargar los datos, ".$e;
+        }
+    }
+    public function listar_categoria(){
+        $this->sql = "SELECT * FROM programas WHERE idCategoria = ? ORDER BY idCategoria, nombre ASC;";
+        try {
+            $stm = $this->conexion->prepare($this->sql);
+            $stm->bindparam(1,$this->idCategoria);
             $stm->execute();
             $this->datos = $stm->fetchAll(PDO::FETCH_ASSOC);
             return $this->datos;

@@ -59,21 +59,21 @@
         </div>
         <div class="row">        
             <div class="col mb-3">
-                <?php
-                    $objPrograma = new Programa();
-
-                ?>
                 <label for="programa" class="form-label">Programas</label>
                 <select class="form-select" id="programa" required>
                     <option selected value="">Selecciona..</option>
                     <?php
-                    foreach ($objPrograma->listar() as $programa) {
+                        $objCategoria = new Categoria();
+                        foreach ($objCategoria->listar() as $categoria) {
+                            $objPrograma = new Programa();
+                            $objPrograma->idCategoria = $categoria['id'];
                     ?>
-                    <option value="<?php echo $programa['id'] ?>"><?php echo $programa['nombre'] ?></option>
-                    
-                    <?php
-                    }
-                    ?>
+                            <optgroup label="<?php echo $categoria['nombre'] ?>">
+                    <?php     foreach ($objPrograma->listar_categoria() as $programa) {   ?>
+                                <option value="<?php echo $programa['id'] ?>"><?php echo $programa['nombre'] ?></option>
+                    <?php     }   ?>
+                            </optgroup>
+                    <?php   } ?>
                 </select>
             </div>
         </div>

@@ -1,5 +1,6 @@
 <?php
   require("../php/Modelo/conexion.php");
+  require("../php/Modelo/categoria.php");
   require("../php/Modelo/programa.php");
   require("../php/Modelo/preinscripcion.php");
 ?>

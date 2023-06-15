@@ -21,7 +21,7 @@
             </div>
             <div class="col-md-6  animate__animated animate__slideInRight --animate-delay: 0.9s;" data-wow-duration="1.5s" data-wow-delay="0.3s">
               <div>
-              <img src="../img/Resursos Humanos.jpeg" class="card-img-top" alt="..." style="border-radius:10% 0px 10% 0px; box-shadow:10px 0px 0px #000;">
+              <img src="../img/Recursos_Humanos.jpeg" class="card-img-top" alt="..." style="border-radius:10% 0px 10% 0px; box-shadow:10px 0px 0px #000;">
               </div>
             </div>
           </div>

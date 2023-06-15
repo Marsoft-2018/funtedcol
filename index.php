@@ -151,6 +151,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -170,6 +171,12 @@
                 <p>Some representative placeholder content for the third slide.</p>
             </div> -->
             </div>
+            <div class="carousel-item">
+            <img src="img/Imagen10.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">                
+                <p style="text-align: right;font-size:6px;"><a href="https://www.freepik.es/foto-gratis/cierrese-arriba-globo-cristalino-que-descansa-sobre-hierba-bosque_5016918.htm#query=mundo&position=26&from_view=keyword&track=sph">Imagen de jcomp</a> en Freepik</p>
+            </div><!--  -->
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -184,6 +191,19 @@
       <h3 style="text-align: center; font-size:3em;margin-top:60px;margin-bottom:60px;">PROGRAMAS TÉCNICOS LABORALES</h3>
     </div>
     <section class="programas" style="display: flex; justify-content: center;">
+    <div class="row">
+        <div class="col">
+          <div class="card mx-2" style="width: 25rem;">
+            <img src="img/Recursos_Humanos.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              
+              <h2 class="card-title" style="color: #c00000;">Auxiliar Contable y Financiero</h2>
+              <p class="card-text">La carrera técnica de Auxiliar Contable y Financiero de FUNTEDCOL Realizan la medición y reconocimiento de las transacciones contables y financieras, realizan procesos de liquidación de impuestos, cuantifican costos y registran las operaciones de flujos monetarios, verifican inventarios, depuran y apoyan la elaboración de informes, comprobantes y documentos relacionados con empresa o personas naturales. Son empleados por el sector público y privado.</p>
+              <a href="paginas/index.php?pro=AuxiliarContable" class="btn btn-danger">Ver más</a>
+            </div>
+          </div>
+        </div>
+      <div class="col">
         <div class="card mx-2" style="width: 25rem;">
             <img src="img/syso.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -192,7 +212,8 @@
               <a href="paginas/index.php?pro=SeguridadOcupacional" class="btn btn-danger">Ver más</a>              
             </div>
           </div>
-          <div class="card mx-2" style="width: 25rem;">
+          </div>
+        <div class="col"><div class="card mx-2" style="width: 25rem;">
             <img src="img/administrativo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               
@@ -201,15 +222,8 @@
               <a href="paginas/index.php?pro=AuxiliarAdministrativo" class="btn btn-danger">Ver más</a>
             </div>
           </div>
-          <div class="card mx-2" style="width: 25rem;">
-            <img src="img/estudiantes3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              
-              <h2 class="card-title" style="color: #c00000;">Auxiliar Contable y Financiero</h2>
-              <p class="card-text">La carrera técnica de Auxiliar Contable y Financiero de FUNTEDCOL Realizan la medición y reconocimiento de las transacciones contables y financieras, realizan procesos de liquidación de impuestos, cuantifican costos y registran las operaciones de flujos monetarios, verifican inventarios, depuran y apoyan la elaboración de informes, comprobantes y documentos relacionados con empresa o personas naturales. Son empleados por el sector público y privado.</p>
-              <a href="paginas/index.php?pro=AuxiliarContable" class="btn btn-danger">Ver más</a>
-            </div>
-          </div>
+        </div>
+        <div class="col">
           <div class="card mx-2" style="width: 25rem;">
             <img src="img/primeraInfancia.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -221,6 +235,8 @@
               <a href="#" class="btn btn-danger">Ver más</a>
             </div>
           </div>
+        </div>
+    </div>
     </section>
     <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('');" id="quienesSomos">
       <div class="container">
