@@ -141,6 +141,9 @@
                 <li><a class="dropdown-item" href="#cursosAdmin"><i class="fa fa-heartbeat"></i> Cursos de Belleza</a></li>
                 <li><a class="dropdown-item" href="#cursosAdmin"><i class="fa fa-heartbeat"></i> Otros cursos</a></li>
               </ul>              
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="sistema/certificados/index.php" target="_blank">Descargar cetificado</a>
             </li>
           </ul>
         </div>
@@ -158,7 +161,7 @@
             <img src="img/Imagen2.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="img/Imagen3.png" class="d-block w-100" alt="...">
+            <img src="img/Imagen11.png" class="d-block w-100" alt="...">
             <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>

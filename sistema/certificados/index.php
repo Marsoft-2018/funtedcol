@@ -1,265 +1,72 @@
-<?php
-require("../../php/Modelo/conexion.php");
-require("../../php/Modelo/programa.php");
-require("../../php/Modelo/certificado.php");
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+    <title>Funtedcol</title>
+    <meta name="keywords" content="institución de educación para el trabajo y desarrollo humano, El Carmen de Bolívar">
+    <meta name="description" content="FUNTEDCOL es un grupo multidisciplinario de profesionales que creamos, desarrollamos, implementamos y ofrecemos servicios educativos con altos estándares de calidad, en las áreas de formación para el Trabajo y Desarrollo Humano">
+    <meta name="author" content="Ing. Jose Alfredo Tapia">
 
-// $request_body = file_get_contents('php://input');
-// $data = json_decode($request_body, true);
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="../../img/icono.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-$objCertificacion = new Certificado();
-$id = "";
-$documento = "";
-if(isset($_REQUEST['id'])){
-    $objCertificacion->id = $_REQUEST['id'];
-}
-if(isset($_REQUEST['documento'])){
-    $objCertificacion->documento = $_REQUEST['documento'];
-}
+    <!-- Bootstrap CSS
+    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+     <!-- Site Metas --><!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
-ob_start();
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificado</title>
-    <style>
-        body{
-            background: linear-gradient(180deg,#050823,#080d3c);
-        }
-        .container{
-            position: relative;
-            border: 1px solid #cecece;
-            border-radius: 10px;
-            background: url("http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/img/marcaAgua.png");
-            background-color: #fff;
-            background-position: center;
-            background-size: 25%;
-            background-repeat:no-repeat;
-            text-align: center;
-            height: 710px;
-        }
-        .escudos{
-            position: relative;
-            width: 71%;
-            height: 60px;
-            margin: auto;
-            margin-top: 30px;            
-            margin-left: 90px;
-            margin-right: 150px;
-            z-index: 50;
-        }
-        .escudos div{
-            width: 100px;
-            height: 100px;
-            float: left;
-        }
-        .escudos .escudo1{
-            width: 100px;
-            height: 100px;
-            float: left;
-        }
-        .escudos .escudo2{
-            width: 100px;
-            height: 100px;
-            float: right;
-        }
-        .escudos div img{
-            width: 100%;
-            height: 100%;
-        }
-        .banda{
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            width: 250px;
-            height: 100%;
-            z-index: -1;
-        }
-        .banda img{
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-        .cabecera *{
-            margin: 0;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        .cabecera{
-            margin: 0 auto;
-            width: 65%;
-            z-index: 52;
-        }
-
-        .cabecera h1{
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size: 2.5em;
-            letter-spacing: 2px;
-        }
-
-        .cabecera h2{
-            margin-top: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1em;
-            letter-spacing: 2px;
-        }
-        .cabecera h4{
-            font-size: 1em;
-        }
-        .cabecera p{
-            font-size: 0.7em;
-        }
-        .estudiante .nombre{
-            display: block;
-            width: 70%;
-            margin: auto;
-            margin-top: 10px;
-            font-family: "Edwardian Script ITC";
-            font-size: 2em;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        .estudiante .documento{
-            margin-top: 5px;
-            font-size: 1em;
-        }
-        .formacion .programa{
-            display: block;
-            width: 70%;
-            margin: auto;
-            margin-top: 1px;
-            font-size: 1.2em;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        /*
-        .estudiante h2{
-            margin-top: 25px;
-            font-family: "Edwardian Script ITC";
-            font-size: 2.5em;
-            letter-spacing: 2px;
-        }*/
-        .bandaVerificacion{
-            margin-top: 65px;
-            width: 95%;
-            font-size: 10px;
-            z-index: 50;
-            text-align: left;
-            padding-left: 100px;
-        }
-        .firmas{
-            position: relative;
-            width: 80%;
-            height: 55px;
-            margin-top: 10px;
-            margin-left: 40px;
-            margin-bottom: 10px;
-            margin-right: 150px;
-        }
-        .firmas .firma1{
-            float: left;
-            width: 200px;
-            height: 60px;
-            z-index: 50;
-            margin-left: 100px;
-        }
-        .firmas .firma2{
-            float: right;
-            width: 200px;
-            height: 60px;
-            z-index: 50;
-            margin-right: 100px;
-        }
-        .firmas div img{
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="escudos">
-            <div class="escudo1">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/escudoColombia.jpg" alt="">
+  </head>
+  <body> 
+    <div>
+        <div class="row">
+            <div class="col" style="height: 100%; display: flex; justify-content: start; flex-flow:column nowrap; align-items:center; background: linear-gradient(195deg,#c00000,#623237); color: #fff; text-align: center;padding:35px;">
+                <h1 class="mb-2">DESCARGA DE CERTIFICADO</h1>   
+                <div style="min-height: 50%; max-height:70%;width:70%;">
+                    <img src="img/certificacion.png" alt="" style="width: 70%;">
+                </div>                 
+                <footer class="mt-2" >
+                    <h3>FUNTEDCOL</h3>
+                    <p>
+                    Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; </br>
+                    establecida por el Decreto 4904 de 2009, Decreto 1075 de 2015, Ley G/ral de Educación 115 de 1994.</br>
+                    </br>
+                    E-mail: funtedcol2018@gmail.com - info@funtedcol.com.co - director@funtedcol.com.co
+                    </br>
+                    Teléfono: 3242943174
+                    </p>
+                    </br>
+                </footer>
             </div>
-            <div class="escudo2">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/img/escudoG.png" alt="">
+            <div class="col" style="display: flex; justify-content: center; flex-flow:column nowrap; text-align:center; padding:60px">
+                <div class="container" style="border-radius:12px; padding:50px; width:70%;">
+                    <img src="../../img/escudoG.png" alt="" style="width: 25%;" class="mb-2">
+                    <h3 class="mb-2">Certificados</h3>
+                    <p style="text-align: left;">
+                        Para iniciar el proceso de descarga de certificados debe digitar su número de documento (sin espacios, puntos y comas) y luego dar clic en el botón "Buscar".
+                    </p>
+                    <form action="documento.php" method="post">
+                        <input type="text" class="form form-control mt-2" name="documento" placeholder="Número de documento" required>
+                        <hr>
+                        <button type="submit" class="btn btn-danger btn-lg mt-2" style="width: 100%;">Buscar</button>
+                    </form>
+                </div>
             </div>
-        </div>             
-        <div class="banda">
-            <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/bandaDiploma.png" alt="">
-        </div>
-        <div class="cabecera">
-            <h1>FUNTEDCOL</h1>
-            <h4>INSTITUCION DE EDUCACION PARA EL TRABAJO Y DESARROLLO HUMANO</h4>
-            <h3>FUNDACIÓN TRABAJANDO POR LA EDUCACIÓN Y EL DESARROLLO DE COLOMBIA</h3>
-            <p>
-                Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; establecida<br>por el Decreto 4904 de 2009, Decreto 1075 de 2015, Ley G/ral de Educación 115 de 1994.
-            </p>
-            <h2>CERTIFICA QUE</h2>
-        </div>
-        <?php
-            foreach ($objCertificacion->cargar() as $certificado) {
-        ?>
-        
-        <div class="estudiante">
-            <h2 class="nombre"><?php echo $certificado['nombre']; ?></h2>
-            <h3 class="documento">Documento de Identidad N° <?php echo $certificado['documento']; ?></h3>
-            <p>Cursó y aprobó la Formación Teórico – Práctica</p>
-            <div class="formacion">
-               <h2 class="programa"><?php echo $certificado['programa']; ?></h2>
-               <p>
-                    Con una intensidad de: 40 horas
-                    Ciudad y fecha de expedición: Carmen de Bolívar <?php echo $certificado['dia']; ?> de <?php echo $certificado['mes']; ?> del <?php echo $certificado['anho']; ?>
-               </p>
-            </div>
-        </div> 
-        
-        <?php
-            }
-        ?>
-        <div class="firmas">
-            <div class="firma1">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/firmaDirector.jpg" alt="">
-                <h5>
-                    RONALD PALENCIA BUELVAS<br>
-                    DIRECTOR
-                </h5>
-            </div>
-            <div class="firma2">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/firmaCoordinadora.jpg" alt="">
-                <h5>
-                    YEIMYS DIAZ HERRERA<br>
-                    COORD. ACADEMICA
-                </h5>
-            </div>
-        </div>  
-        <div class="bandaVerificacion">
-            <p><br><br>
-                <strong>REGISTRO:</strong>0039392122 0025 
-                Consulte la autenticidad de este documento 
-                <strong>E-mail</strong>: funtedcol2018@gmail.com 
-                <strong>Teléfono</strong>: 3002621973 - 3242943174
-            </p>
         </div>
     </div>
-</body>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
 </html>
-<?php
-$html = ob_get_clean();
-//echo $html;
-require_once 'dompdf/autoload.inc.php';
-use Dompdf\Dompdf;
-$pdf = new Dompdf();
-$opciones = $pdf->getOptions();
-$opciones->set(array('isRemoteEnabled'=>true));
-$pdf->setOptions($opciones);
-//$pdf->loadHtml("Hola desde el pdf");
-$pdf->loadHtml($html);
-$pdf->setPaper('letter','landscape');
-//$pdf->setPaper('A4','landscape');
-$pdf->render();
-$pdf->stream("certificacion.pdf",array("Attachment"=>false));
-?>
