@@ -2,7 +2,7 @@
 require("../../php/Modelo/conexion.php");
 require("../../php/Modelo/programa.php");
 require("../../php/Modelo/certificado.php");
-
+$meses = ["","enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
 
 $objCertificacion = new Certificado();
 $id = "";
@@ -30,8 +30,11 @@ ob_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificado</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&display=swap');
+        
         body{
             background: linear-gradient(180deg,#050823,#080d3c);
+            font-family: "Roboto", sans-serif;
         }
         .container{
             position: relative;
@@ -89,7 +92,6 @@ ob_start();
         }
         .cabecera *{
             margin: 0;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .cabecera{
             margin: 0 auto;
@@ -98,19 +100,29 @@ ob_start();
         }
 
         .cabecera h1{
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: Impact;
             font-size: 2.5em;
             letter-spacing: 2px;
         }
 
+        .cabecera .funtedcol{
+            font-family: 'Anton', sans-serif;
+            font-size: 2.7em;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
         .cabecera h2{
             margin-top: 25px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 1em;
             letter-spacing: 2px;
         }
         .cabecera h4{
-            font-size: 1em;
+            font-size: 0.9em;
+        }
+        .cabecera h5{
+            font-size: 0.8em;
         }
         .cabecera p{
             font-size: 0.7em;
@@ -165,9 +177,14 @@ ob_start();
         .firmas .firma1{
             float: left;
             width: 200px;
-            height: 60px;
+            height: 70px;
             z-index: 50;
             margin-left: 100px;
+        }
+        .firmas .nombre{
+            margin-top: 55px ;
+            float: left;
+            z-index: 40;
         }
         .firmas .firma2{
             float: right;
@@ -186,21 +203,21 @@ ob_start();
     <div class="container">
         <div class="escudos">
             <div class="escudo1">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/sistema/certificados/img/escudoColombia.jpg" alt="">
+                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/escudoColombia.jpg" alt="">
             </div>
             <div class="escudo2">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/img/escudoG.png" alt="">
+                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/img/escudoG.png" alt="">
             </div>
         </div>             
         <div class="banda">
-            <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/sistema/certificados/img/bandaDiploma.png" alt="">
+            <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/bandaDiploma.png" alt="">
         </div>
         <div class="cabecera">
-            <h1>FUNTEDCOL</h1>
-            <h4>INSTITUCION DE EDUCACION PARA EL TRABAJO Y DESARROLLO HUMANO</h4>
-            <h3>FUNDACIÓN TRABAJANDO POR LA EDUCACIÓN Y EL DESARROLLO DE COLOMBIA</h3>
+            <h1 class="funtedcol">FUNTEDCOL</h1>
+            <h5>INSTITUCION DE EDUCACION PARA EL TRABAJO Y DESARROLLO HUMANO</h5>
+            <h4>FUNDACIÓN TRABAJANDO POR LA EDUCACIÓN Y EL DESARROLLO DE COLOMBIA</h4>
             <p>
-                Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; establecida<br>por el Decreto 4904 de 2009, Decreto 1075 de 2015, Ley G/ral de Educación 115 de 1994.
+                Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; establecida por el Decreto 4904 de 2009, Decreto 1075 de 2015, Ley G/ral de Educación 115 de 1994.
             </p>
             <h2>CERTIFICA QUE</h2>
         </div>
@@ -215,39 +232,39 @@ ob_start();
             <div class="formacion">
                <h2 class="programa"><?php echo $certificado['programa']; ?></h2>
                <p>
-                    Con una intensidad de: 40 horas
-                    Ciudad y fecha de expedición: Carmen de Bolívar <?php echo $certificado['dia']; ?> de <?php echo $certificado['mes']; ?> del <?php echo $certificado['anho']; ?>
+                    Con una intensidad de: <?php echo $certificado['horas']; ?> horas<br>
+                    Ciudad y fecha de expedición: El Carmen de Bolívar <?php echo $certificado['dia']; ?> de <?php echo $meses[$certificado['mes']]; ?> del <?php echo $certificado['anho']; ?>
                </p>
             </div>
         </div> 
-        
-        <?php
-            }
-        ?>
         <div class="firmas">
             <div class="firma1">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/sistema/certificados/img/firmaDirector.jpg" alt="">
-                <h5>
+                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/firmaDirector.jpg" alt="">
+                <h5 class="nombre">
                     RONALD PALENCIA BUELVAS<br>
                     DIRECTOR
                 </h5>
             </div>
             <div class="firma2">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/sistema/certificados/img/firmaCoordinadora.jpg" alt="">
-                <h5>
+                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/firmaCoordinadora.jpg" alt="">
+                <h5 class="nombre">
                     YEIMYS DIAZ HERRERA<br>
                     COORD. ACADEMICA
                 </h5>
             </div>
         </div>  
         <div class="bandaVerificacion">
-            <p><br><br>
-                <strong>REGISTRO:</strong>0039392122 0025 
+            <p><br><br><br>
+                <strong>REGISTRO:</strong><?php echo $certificado['id']; ?> 
                 Consulte la autenticidad de este documento 
-                <strong>E-mail</strong>: funtedcol2018@gmail.com 
-                <strong>Teléfono</strong>: 3002621973 - 3242943174
+                www.funtedcol.com.co
+                <strong>Teléfono</strong>: 3242943174
             </p>
         </div>
+        
+        <?php
+            }
+        ?>
     </div>
 </body>
 </html>

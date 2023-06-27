@@ -143,7 +143,7 @@
               </ul>              
             </li>            
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="sistema/certificados/index.php" target="_blank">Descargar cetificado</a>
+              <a class="nav-link" aria-current="page" href="sistema/certificados/index.php" target="_blank"><i class="fa fa-bookmark-o"></i> Descargar cetificado</a>
             </li>
           </ul>
         </div>
@@ -155,6 +155,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -179,6 +180,9 @@
             <div class="carousel-caption d-none d-md-block">                
                 <p style="text-align: right;font-size:6px;"><a href="https://www.freepik.es/foto-gratis/cierrese-arriba-globo-cristalino-que-descansa-sobre-hierba-bosque_5016918.htm#query=mundo&position=26&from_view=keyword&track=sph">Imagen de jcomp</a> en Freepik</p>
             </div><!--  -->
+            </div>
+            <div class="carousel-item">
+              <img src="img/Imagen12.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -216,7 +220,8 @@
             </div>
           </div>
           </div>
-        <div class="col"><div class="card mx-2" style="width: 25rem;">
+        <div class="col">
+          <div class="card mx-2" style="width: 25rem;">
             <img src="img/administrativo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               
@@ -247,7 +252,7 @@
             <div class="col-md-12"  style="background-color: rgba(250,250,250,0.2); padding: 15px;">
                 <div class="mision-vision text-right" >
                     <h1 style="color: #000;">QUIENES SOMOS</h1>
-                    <p style="color: #000; font-size: 1.3em;">                      
+                    <p style="color: #000; font-size: 1.3em; text-align:justify;">                      
                       El Objeto Social de FUNTEDCOL, es la de ser una Institución formadora y capacitadora de jóvenes y adultos teniendo en cuenta las necesidades de las personas para el Trabajo y el Desarrollo del Talento Humano, mediante la formación integral en aspecto académicos y por competencias laborales generales y específicas, así, como las organizativas, comunicativas, técnicas y tecnológicas, las Intelectuales, interpersonales, personales, las emprendedoras, facilitando el desarrollo de habilidades y destrezas para el trabajo, artesanal, artístico recreacional,   en los diferentes sectores de la producción, la distribución, y de los servicios; para ser líderes capaces de montar sus propias microempresas, que respondan a las necesidades de la comunidad y del entorno empresarial, impulsando el desarrollo sostenible a nivel local, regional, nacional y se articulen en el mundo globalizado de la economía de hoy.<br><br>
                       Aspectos Legales: Los aspectos legales son los cimientos en que se apoya FUNTEDCOL, para su funcionamiento, especialmente el art. 67 de la Constitución Política de Colombia, que expresa que la educación es un derecho de la persona y un servicio público que tiene una función social; en la Ley 30 de 1992, en la Ley 115 General de la Educación del año 1994, que en sus diferentes artículos fundamenta las bases del Sistema Educativo Colombiano en su Título I, Disposiciones Preliminares y en los siguientes artículos:
                       El artículo2º -Servicios Educativos: Comprende el conjunto de Normas Jurídicas, los programas curriculares, la educación formal e informal, de los establecimientos educativos, las instituciones sociales (estatales o Privadas) con funciones educativas, culturales y recreativas, los recursos humanos, tecnológicos, metodológicos, materiales, administrativos y financieros, articulados en procesos y estructuras para alcanzarlos objetivos de la educación.
@@ -260,14 +265,14 @@
     <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('img/fondos/mision.jpg');" id="mision">
       <div class="container" >
           <div class="row">
-              <div class="col-md-6" style="background-color: #c0000033; padding: 15px;">
+              <div class="col" style="background-color: #c0000033; padding: 15px;">
                   <div class="mision-vision text-left">
                       <h1>MISION</h1>
-                      <p style="color: #fff; font-size: 1.2em;">FUNTEDCOL es un grupo multidisciplinario de profesionales que creamos, desarrollamos, implementamos y ofrecemos servicios educativos con altos estándares de calidad, en las áreas de formación para el Trabajo y Desarrollo Humano, actuando como un elemento de conocimiento en el recurso humano y en valores éticos, comprometidos en aplicar los principios de la calidad, integridad, espíritu de servicio y cumplimiento. Que contribuye al crecimiento económico y social de la comunidad, mediante la capacitación integral de sus estudiantes, en técnicos y tecnólogos idóneos para que se vinculen al sector productivos, bien sea, local, regional y/o nacional.
+                      <p style="color: #fff; font-size: 1.2em;text-align:justify;">FUNTEDCOL es un grupo multidisciplinario de profesionales que creamos, desarrollamos, implementamos y ofrecemos servicios educativos con altos estándares de calidad, en las áreas de formación para el Trabajo y Desarrollo Humano, actuando como un elemento de conocimiento en el recurso humano y en valores éticos, comprometidos en aplicar los principios de la calidad, integridad, espíritu de servicio y cumplimiento. Que contribuye al crecimiento económico y social de la comunidad, mediante la capacitación integral de sus estudiantes, en técnicos y tecnólogos idóneos para que se vinculen al sector productivos, bien sea, local, regional y/o nacional.
                       </p>
                   </div>
               </div>
-              <div class="col-md-6" style="display: flex; justify-content: center; align-items: strech;">
+              <div class="col" style="display: flex; justify-content: center; align-items: strech;">
                 <img src="img/mision.png" alt="">
               </div>
           </div>
@@ -277,13 +282,13 @@
   <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('img/fondos/fondo2.png');" id="vision">
     <div class="container">
         <div class="row text-right align-items-center">
-              <div class="col-md-6" style="display: flex; justify-content: center; align-items: strech;">
+              <div class="col" style="display: flex; justify-content: center; align-items: strech;">
                 <img src="img/vision.png" alt="">
               </div>
-            <div class="col-md-6"  style="background-color: rgba(0,0,0,0.2); padding: 15px;">
+            <div class="col"  style="background-color: rgba(0,0,0,0.2); padding: 15px;">
                 <div class="mision-vision text-right">
                     <h1>VISION</h1>
-                    <p style="color: #fff; font-size: 1.2em;">                      
+                    <p style="color: #fff; font-size: 1.2em;text-align:justify;">                      
                       Para el año 2025, la Fundación Trabajando por la Educación y el Desarrollo de Colombia “FUNTEDCOL “Educando para el Futuro”, será reconocido a nivel regional y nacional por su excelente nivel académico en todos sus programas, contando con una infraestructura propia y moderna, un equipo de trabajo idóneo y comprometido con la satisfacción de nuestros estudiantes y la mejora continua de los procesos. Convirtiéndose en la mejor alternativa de formación para los montemarianos y colombianos en general.
                     </p>
                 </div>
@@ -295,10 +300,10 @@
     <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('');" id="vision">
       <div class="container">
         <div class="row text-right align-items-center">
-          <div class="col-md-12"  style="background-color: rgba(250,250,250,0.2); padding: 15px;">
+          <div class="col"  style="background-color: rgba(250,250,250,0.2); padding: 15px;">
             <div class="mision-vision text-right" >
               <h1 style="color: #000;">FILOSOFÍA</h1>
-              <p style="color: #000; font-size: 1.3em;">                      
+              <p style="color: #000; font-size: 1.3em;text-align:justify;">                      
                 La institución asume como compromiso el trabajar incansablemente por una construcción colectiva de valores como: la responsabilidad, autoestima, tolerancia, respeto, afecto, amistad, solidaridad, ternura, civismo, sentido de pertenencia, transparencia, equidad, justicia, espíritu de progreso y emprendimiento. De igual forma, se propende por la formación de un ser humano integral en donde él mismo sea artífice de su propio desarrollo.
               </p>
             </div>
@@ -312,7 +317,7 @@
             <h3>SIMBOLOS INSTITUCIONALES</h3>
         </div><!-- end title -->
         <div class="row">
-          <div class="col-md-6 wow fadeInLeft simbolo" data-wow-duration="1.5s" data-wow-delay="0.2s">
+          <div class="col wow fadeInLeft simbolo" data-wow-duration="1.5s" data-wow-delay="0.2s">
             <div class="card mb-4 shadow-sm imgSimbolo">
               <img src="img/escudoG.png" alt="" class="escudo"  style="margin-top: 10px;">
               <div class="card-body">
@@ -323,7 +328,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 wow fadeInRight simbolo" data-wow-duration="1.5s" data-wow-delay="0.3s">
+          <div class="col wow fadeInRight simbolo" data-wow-duration="1.5s" data-wow-delay="0.3s">
             <div class="card mb-4 shadow-sm imgSimbolo">
               <img src="img/bandera.png" alt="" class="bandera"  style="margin-top: 10px;">
               <div class="card-body">
@@ -341,7 +346,7 @@
         <hr>
         <div class="container">
           <div class="row text-center align-items-center">
-            <div class="col-md-6 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
+            <div class="col wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
               <div class="mision-vision text-left">
                 <p style="color: #000; font-size: 1.1em; background-color: rgba(250,250,250,0.6); padding:5px;">
                   Coro<br>
@@ -363,7 +368,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.4s">
+            <div class="col wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.4s">
               <div class="mision-vision text-left">
                 <p style="color: #000; font-size: 1.1em; background-color: rgba(250,250,250,0.6); padding:5px;">
                   II<br>
@@ -394,41 +399,48 @@
     <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('');" id="diplomados">
       <div class="container">
         <div class="row text-right">
-          <div class="col-md-12"  style="background-color: rgba(250,50,250,0.2); padding: 15px; color: #000;">
+          <div class="col-md"  style="background-color: rgba(250,50,250,0.2); padding: 15px; color: #000;">
             <div class="text-right" >
               <h1 style="color: #000;text-align:center;font-size:2em;">DIPLOMADOS</h1>
               <hr>
               <div class="row">
-                <div class="col-4">
-                  <img src="img/curso1.jpeg" alt="" style="width:400px;">                          
+                <div class="col">
+                  <div style="width: 95%;">
+                    <img src="img/curso1.jpeg" alt="" style="width:100%;">  
+                  </div>                        
                 </div>
-                <div class="col-4">
-                  <ul style="color: #000; font-size: 1.3em;">              
-                    <li>	Seguridad Social</li>
-                    <li>	Seguridad Y Salud En El Trabajo</li>
-                    <li>	Auditor Interno Hseq</li>
-                    <li>	Gestión Documental Y Administración De Archivos</li>
-                    <li>	Auditoría Y Control Interno</li>
-                    <li>	Matemáticas Financieras</li>
-                    <li>	Finanzas</li>
-                    <li>	Gerencia Financiera</li>
-                    <li>	Normas Internacionales De Información Financiera (Pymes</li>
-                    <li>	Nómina Y Prestaciones Sociales</li>
-                  </ul>  
-                </div>
-                <div class="col-4">
-                  <ul style="color: #000; font-size: 1.3em;">
-                    <li>	Gestión De Recursos Humanos</li>
-                    <li>	Neuropedagogía Infantil</li>
-                    <li>	Docencia Universitaria</li>
-                    <li>	Educación Especial</li>
-                    <li>	Educación Infantil</li>
-                    <li>	Neuroeducación</li>
-                    <li>	Pedagogía Basada En Competencias</li>
-                    <li>	Prevención Del Abuso Sexual Infantil</li>
-                    <li>	Neurodesarrollo, Educacion Y Psicologia Del Desarrollo Infantil</li>
-                  </ul>                            
-                </div>
+                <div class="col">  
+                  <div class="row">
+                    <div class="col">
+                      <ul style="color: #000; font-size: 1.3em;">              
+                        <li>	Seguridad Social</li>
+                        <li>	Seguridad Y Salud En El Trabajo</li>
+                        <li>	Auditor Interno Hseq</li>
+                        <li>	Gestión Documental Y Administración De Archivos</li>
+                        <li>	Auditoría Y Control Interno</li>
+                        <li>	Matemáticas Financieras</li>
+                        <li>	Finanzas</li>
+                        <li>	Gerencia Financiera</li>
+                        <li>	Normas Internacionales De Información Financiera (Pymes</li>
+                        <li>	Nómina Y Prestaciones Sociales</li>
+                      </ul>  
+                    </div>
+                    <div class="col">
+                      <ul style="color: #000; font-size: 1.3em;">
+                        <li>	Gestión De Recursos Humanos</li>
+                        <li>	Neuropedagogía Infantil</li>
+                        <li>	Docencia Universitaria</li>
+                        <li>	Educación Especial</li>
+                        <li>	Educación Infantil</li>
+                        <li>	Neuroeducación</li>
+                        <li>	Pedagogía Basada En Competencias</li>
+                        <li>	Prevención Del Abuso Sexual Infantil</li>
+                        <li>	Neurodesarrollo, Educacion Y Psicologia Del Desarrollo Infantil</li>
+                      </ul>                            
+                    </div>
+                        
+                  </div>                
+                  
               </div>
             </div>
           </div>
@@ -443,39 +455,45 @@
               <h1 style="color: #000;text-align:center;font-size:2em;">CURSOS SALUD</h1>
               <hr>
               <div class="row">
-                <div class="col-4">
-                  <ul>            
-                    <li> Soporte Vital Basico (Bls)</li>
-                    <li> Soporte Vital Avanzado (Acls)</li>
-                    <li> Gestion Del Duelo</li>
-                    <li> Humanizacion De Servicios En Salud</li>
-                    <li> Seguridad Del Paciente</li>
-                    <li> Cuidado Del Auxiliar De Enfermería Al Adulto Críticamente Enfermo</li>
-                    <li> Inducción A Bacteriología Y Laboratorio Clínico</li>
-                    <li> Bioseguridad Y Laboratorio Clínico</li>
-                    <li> Toma De Muestras En Tml Y Análisis</li>
-                    <li> Toma De Muestras Especiales</li>
-                    <li> Citología</li>
-                    <li> Atencion Integrada De Las Enfermedades Prevalentes De La Infancia (Aiepi Clinico)</li>
-                  </ul>  
+                <div class="col">
+                  <div class="row">
+                    <div class="col">
+                      <ul>            
+                        <li> Soporte Vital Basico (Bls)</li>
+                        <li> Soporte Vital Avanzado (Acls)</li>
+                        <li> Gestion Del Duelo</li>
+                        <li> Humanizacion De Servicios En Salud</li>
+                        <li> Seguridad Del Paciente</li>
+                        <li> Cuidado Del Auxiliar De Enfermería Al Adulto Críticamente Enfermo</li>
+                        <li> Inducción A Bacteriología Y Laboratorio Clínico</li>
+                        <li> Bioseguridad Y Laboratorio Clínico</li>
+                        <li> Toma De Muestras En Tml Y Análisis</li>
+                        <li> Toma De Muestras Especiales</li>
+                        <li> Citología</li>
+                        <li> Atencion Integrada De Las Enfermedades Prevalentes De La Infancia (Aiepi Clinico)</li>
+                      </ul>  
+                    </div>
+                    <div class="col">
+                      <ul>            
+                        <li> Atencion Integrada De Las Enfermedades Prevalentes De La Infancia  (Aiepi Comunitario)</li>
+                        <li> Atencion A Victimas De Violencia Sexual</li>
+                        <li> Atencion A Victimas De Ataques Con Agentes Quimicos</li>
+                        <li> Manejo Integral De Salud De Victimas De Violencia Sexual</li>
+                        <li> Atencion De Pacientes Con Cuidados Paliativos</li>
+                        <li> Cuidados Paliativos</li>
+                        <li> Bioseguridad Covid-19</li>
+                        <li> Aplicación De Inmunobiologicos (Vacunacion)</li>
+                        <li> Aplicación De Inmunobiologicos Covid-19</li>
+                        <li> Estrategia Iami</li>
+                        <li> Primeros Auxilios</li>
+                      </ul>                             
+                    </div>
+                  </div>
                 </div>
-                <div class="col-4">
-                  <ul>            
-                    <li> Atencion Integrada De Las Enfermedades Prevalentes De La Infancia  (Aiepi Comunitario)</li>
-                    <li> Atencion A Victimas De Violencia Sexual</li>
-                    <li> Atencion A Victimas De Ataques Con Agentes Quimicos</li>
-                    <li> Manejo Integral De Salud De Victimas De Violencia Sexual</li>
-                    <li> Atencion De Pacientes Con Cuidados Paliativos</li>
-                    <li> Cuidados Paliativos</li>
-                    <li> Bioseguridad Covid-19</li>
-                    <li> Aplicación De Inmunobiologicos (Vacunacion)</li>
-                    <li> Aplicación De Inmunobiologicos Covid-19</li>
-                    <li> Estrategia Iami</li>
-                    <li> Primeros Auxilios</li>
-                  </ul>                             
-                </div>
-                <div class="col-4">
-                  <img src="img/curso3.jpg" alt="" style="width:400px;">                          
+                <div class="col">
+                  <div style="width: 95%;">
+                    <img src="img/curso3.jpg" alt="" style="width:100%;">
+                  </div>                        
                 </div>
               </div>
             </div>
@@ -490,7 +508,7 @@
             <div class="text-right" >
               <div class="row">
                 <h1 style="color: #000;">Cursos Administrativos</h1>
-                <div class="col-8">
+                <div class="col-7">
                   <ul style="color: #000; font-size: 1.3em;">
                     <li>Manejo De Caja Registradora</li>
                     <li>Servicio Al Cliente</li>
@@ -517,8 +535,10 @@
                     <li> Rescate En Alturas</li>
                   </ul>         
                 </div>
-                <div class="col-4">
-                  <img src="img/curso2.jpg" alt="" style="width:400px;">                          
+                <div class="col">
+                  <div style="width: 95%;">
+                    <img src="img/curso2.jpg" alt="" style="width:100%;">   
+                  </div>                       
                 </div>
               </div>
             </div>
@@ -534,8 +554,10 @@
               <h1 style="color: #000;text-align:center;font-size:2em;">SEMINARIOS</h1>
               <hr>
               <div class="row">
-                <div class="col-4">
-                  <img src="img/seminario.jpg" alt="" style="width:400px;">                          
+                <div class="col-4">   
+                  <div style="width: 95%;">
+                    <img src="img/seminario.jpg" alt="" style="width:100%;">   
+                  </div>                      
                 </div>
                 <div class="col-4">
                   <ul style="color: #000; font-size: 1.3em;">              
@@ -567,12 +589,11 @@
     </div>                
  <hr>
   <div class="row">
-    <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('');" id="vision">
-      <div class="container">
+      <div>
         <div class="row text-right align-items-center">
-          <div class="col-md-12"  style="background-color: rgba(250,250,250,0.2); padding: 15px;">
+          <div class="col-md-12"  style="background-color: rgba(250,250,250,0.2);">
             <div class="mision-vision text-right" >
-              <h1 style="color: #000;">NUESTROS ALIADOS</h1>
+              <h1 style="color: #000; margin-left: 60px;">NUESTROS ALIADOS</h1>
               <div class="aliados">
                 <img src="img/aliados/Bomberos San jacinto.png" alt="">
                 <img src="img/aliados/CEFICC.png" alt="">
@@ -589,7 +610,6 @@
           </div>
         </div>
       </div>
-    </div>	
   </div>
   <hr>
   

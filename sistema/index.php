@@ -1,9 +1,3 @@
-<?php
-  require("../php/Modelo/conexion.php");
-  require("../php/Modelo/categoria.php");
-  require("../php/Modelo/programa.php");
-  require("../php/Modelo/preinscripcion.php");
-?>
 <!doctype html>
 <html lang="es">
   <head>
@@ -20,7 +14,7 @@
     <meta name="author" content="Ing. Jose Alfredo Tapia">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../img/icono.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../img/icono.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS
@@ -28,95 +22,50 @@
      <!-- Site Metas --><!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="../css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/custom.css">
-
-    <!-- Modernizer for Portfolio -->
-    <script src="../js/modernizer.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
   </head>
   <body> 
-  <header class="mt-0" 
-    style="display: flex; 
-    flex-flow:row nowrap; 
-    justify-content: start; 
-    align-items: center;
-    background: linear-gradient(245deg,#c00000,#ed3237); 
-    color: #fff; text-align: center; padding: 20px;">
-    <img src="../img/escudo.png" alt="" width="60" height="54" class="d-inline-block align-text-top">
-    <h2 style="color: #fff;">
-        Sistema - control de preiscipciones, matriculas y certificaciones
-    </h2>
-  </header> 
-  <nav class="nav nav-pills nav-fill navbar-expand-lg p-1">
-  <?php
-  $mod = 1;
-    if(isset($_GET['mod'])){
-      $mod = $_GET['mod'];
-    }
-  ?>
+    <div>
+      <hr>
+        <div class="row mt-5 mb-5">
+            <div class="col" style="display: flex; justify-content: center; flex-flow:column nowrap; text-align:center; padding:60px">
+                <div class="container" style="border-radius:12px; padding:50px; width:70%;">
+                    <img src="../../img/escudoG.png" alt="" style="width: 25%;" class="mb-2">
+                    <h3 class="mb-2">Login</h3>
+                    <form action="panel.php" method="post">
+                        <input type="text" class="form form-control mt-2" name="usuario" placeholder="Usuario" required>
+                        <input type="password" class="form form-control mt-2" name="contrasena" placeholder="Contraseña" required>
+                        <hr>
+                        <button type="submit" class="btn btn-danger btn-lg mt-2" style="width: 100%;">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col" style="height: 100%; display: flex; justify-content: start; flex-flow:column nowrap; align-items:center; background: linear-gradient(195deg,#c00000,#623237); color: #fff; text-align: center;padding:35px;">
+                <h1 class="mb-2">FUNTEDCOL</h1>
+                <div style="min-height: 50%; max-height:70%;width:90%;">
+                    <img src="../img/login.jpg" alt="" style="width: 70%;">
+                </div>                 
+                <footer class="mt-2" >
+                    <p>
+                    Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; </br>
+                    establecida por el Decreto 4904 de 2009, Decreto 1075 de 2015, Ley G/ral de Educación 115 de 1994.</br>
+                    </br>
+                    E-mail: funtedcol2018@gmail.com - info@funtedcol.com.co - director@funtedcol.com.co
+                    </br>
+                    Teléfono: 3242943174
+                    </p>
+                    </br>
+                </footer>
+            </div>
+        </div>
+      <hr>
+    </div>
     
-    <a class="nav-link <?php if($mod == 1){ echo 'active'; } ?>" aria-current="page" href="index.php?mod=1"><i class="fa fa-ticket"></i> Preinscripciones</a>
-    <a class="nav-link <?php if($mod == 2){ echo 'active'; } ?>" href="index.php?mod=2"><i class="fa fa-book"></i> Matriculas</a>
-    <a class="nav-link <?php if($mod == 3){ echo 'active'; } ?>" href="index.php?mod=3"><i class="fa fa-mortar-board"></i> Cerificaciones</a>
-  </nav> 
-  <div class="row">
-    <div class="col m-4">
-      <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-plus"> </i> Nuevo</button>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col p-5" id="respuesta"></div>
-  </div>
-    <div id="modulos" style="padding:20px; min-height: 450px;">        
-        <?php
-          include("listado.php");
-        ?>
-      
-    </div>                
- <hr>
- <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered  modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalCenterTitle">Formulario de registro</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">         
-        <?php
-          include("formulario.php");
-        ?>
-      </div>
-    </div>
-  </div>
-  </div>
-  <footer class="mt-5" style="display: flex; justify-content: center; flex-flow:column nowrap; background: linear-gradient(245deg,#c00000,#ed3237); color: #fff; text-align: center; padding: 60px;">
-    <p>
-      Sistema - control de preiscipciones, matriculas y certificaciones
-    </p>
-    </br>
-  </footer>
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-    
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="../js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

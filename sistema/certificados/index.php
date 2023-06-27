@@ -51,7 +51,7 @@
                 <div class="container" style="border-radius:12px; padding:50px; width:70%;">
                     <img src="../../img/escudoG.png" alt="" style="width: 25%;" class="mb-2">
                     <h3 class="mb-2">Certificados</h3>
-                    <p style="text-align: left;">
+                    <p style="text-align: justify;">
                         Para iniciar el proceso de descarga de certificados debe digitar su número de documento (sin espacios, puntos y comas) y luego dar clic en el botón "Buscar".
                     </p>
                     <form action="documento.php" method="post">
