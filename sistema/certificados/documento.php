@@ -31,11 +31,11 @@ ob_start();
     <title>Certificado</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&display=swap');
-        
+        /*
         body{
             background: linear-gradient(180deg,#050823,#080d3c);
-            font-family: "Roboto", sans-serif;
-        }
+            font-family: "Anton", sans-serif;
+        }*/
         .container{
             position: relative;
             border: 1px solid #cecece;
@@ -100,7 +100,7 @@ ob_start();
         }
 
         .cabecera h1{
-            font-family: Impact;
+            font-family: "Anton", sans-serif;
             font-size: 2.5em;
             letter-spacing: 2px;
         }
@@ -112,19 +112,14 @@ ob_start();
             font-weight: bold;
         }
 
-        .cabecera h2{
-            margin-top: 25px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 1em;
-            letter-spacing: 2px;
-        }
         .cabecera h4{
             font-size: 0.9em;
         }
         .cabecera h5{
             font-size: 0.8em;
         }
-        .cabecera p{
+        .cabecera .membrete{
+            font-weight: 100;
             font-size: 0.7em;
         }
         .estudiante .nombre{
@@ -150,13 +145,7 @@ ob_start();
             letter-spacing: 2px;
             text-transform: uppercase;
         }
-        /*
-        .estudiante h2{
-            margin-top: 25px;
-            font-family: "Edwardian Script ITC";
-            font-size: 2.5em;
-            letter-spacing: 2px;
-        }*/
+        
         .bandaVerificacion{
             margin-top: 65px;
             width: 95%;
@@ -203,23 +192,25 @@ ob_start();
     <div class="container">
         <div class="escudos">
             <div class="escudo1">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/escudoColombia.jpg" alt="">
+                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/sistema/certificados/img/escudoColombia.jpg" alt="">
             </div>
             <div class="escudo2">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/img/escudoG.png" alt="">
+                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/img/escudoG.png" alt="">
             </div>
         </div>             
         <div class="banda">
-            <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/bandaDiploma.png" alt="">
+            <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/sistema/certificados/img/bandaDiploma.png" alt="">
         </div>
         <div class="cabecera">
             <h1 class="funtedcol">FUNTEDCOL</h1>
             <h5>INSTITUCION DE EDUCACION PARA EL TRABAJO Y DESARROLLO HUMANO</h5>
             <h4>FUNDACIÓN TRABAJANDO POR LA EDUCACIÓN Y EL DESARROLLO DE COLOMBIA</h4>
-            <p>
+            <p class="membrete">
                 Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; establecida por el Decreto 4904 de 2009, Decreto 1075 de 2015, Ley G/ral de Educación 115 de 1994.
             </p>
-            <h2>CERTIFICA QUE</h2>
+            <br><br>
+            <h3>CERTIFICA QUE</h3>
+            <br>
         </div>
         <?php
             foreach ($datos as $certificado) {
@@ -228,7 +219,7 @@ ob_start();
         <div class="estudiante">
             <h2 class="nombre"><?php echo $certificado['nombre']; ?></h2>
             <h3 class="documento">Documento de Identidad N° <?php echo $certificado['documento']; ?></h3>
-            <p>Cursó y aprobó la Formación Teórico – Práctica</p>
+            <p  class="documento">Cursó y aprobó la Formación Teórico – Práctica</p>
             <div class="formacion">
                <h2 class="programa"><?php echo $certificado['programa']; ?></h2>
                <p>
@@ -239,14 +230,14 @@ ob_start();
         </div> 
         <div class="firmas">
             <div class="firma1">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/firmaDirector.jpg" alt="">
+                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/sistema/certificados/img/firmaDirector.jpg" alt="">
                 <h5 class="nombre">
                     RONALD PALENCIA BUELVAS<br>
                     DIRECTOR
                 </h5>
             </div>
             <div class="firma2">
-                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/funtedcol/sistema/certificados/img/firmaCoordinadora.jpg" alt="">
+                <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/sistema/certificados/img/firmaCoordinadora.jpg" alt="">
                 <h5 class="nombre">
                     YEIMYS DIAZ HERRERA<br>
                     COORD. ACADEMICA

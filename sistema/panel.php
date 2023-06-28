@@ -1,22 +1,30 @@
 <?php
+  if(!session_start()){
+    session_start();
+  }
   require("../php/Modelo/conexion.php");
   require("../php/Modelo/usuario.php");
-$datos = null;
-if(isset($_POST['usuario']) && isset($_POST['contrasena'])){
-  $objUsuario = new Usuario();
-  $objUsuario->usuario   =  $_POST['usuario'];
-  $objUsuario->contrasena   =  $_POST['contrasena'];
-  foreach ($objUsuario->cargar() as $usuario) {
-    $datos = $usuario['usuario'];
-  }
-  if($datos == null){
+
+  $datos = null;
+  if(!isset($_SESSION['usuario'])){
+    if(isset($_POST['usuario']) && isset($_POST['contrasena'])){
+      $objUsuario = new Usuario();
+      $objUsuario->usuario   =  $_POST['usuario'];
+      $objUsuario->contrasena   =  $_POST['contrasena'];
+      foreach ($objUsuario->cargar() as $usuario) {
+        $datos = $usuario['usuario'];    
+        $_SESSION['usuario'] =  $usuario['usuario'];
+        echo  $_SESSION['usuario'];
+      }
+      if($datos == null){
+          header( 'Location: index.php' ) ;
+          die();
+      }
+    }else{
       header( 'Location: index.php' ) ;
       die();
+    }
   }
-}else{
-  header( 'Location: index.php' ) ;
-  die();
-}
   require("../php/Modelo/categoria.php");
   require("../php/Modelo/programa.php");
   require("../php/Modelo/preinscripcion.php");
@@ -62,7 +70,7 @@ if(isset($_POST['usuario']) && isset($_POST['contrasena'])){
   <header class="mt-0" 
     style="display: flex; 
     flex-flow:row nowrap; 
-    justify-content: start; 
+    justify-content: space-between; 
     align-items: center;
     background: linear-gradient(245deg,#c00000,#ed3237); 
     color: #fff; text-align: center; padding: 20px;">
@@ -70,6 +78,11 @@ if(isset($_POST['usuario']) && isset($_POST['contrasena'])){
     <h2 style="color: #fff;">
         Sistema - control de preiscipciones, matriculas y certificaciones
     </h2>
+    <div >
+      <?php echo "Bienvenido: <strong>".$_SESSION['usuario']."</strong>"; ?>
+      <br>
+      <a href="index.php?salir=true" style="color:#fff;">Salir</a>
+    </div>
   </header> 
   <nav class="nav nav-pills nav-fill navbar-expand-lg p-1">
   <?php
@@ -79,13 +92,14 @@ if(isset($_POST['usuario']) && isset($_POST['contrasena'])){
     }
   ?>
     
-    <a class="nav-link <?php if($mod == 1){ echo 'active'; } ?>" aria-current="page" href="index.php?mod=1"><i class="fa fa-ticket"></i> Preinscripciones</a>
-    <a class="nav-link <?php if($mod == 2){ echo 'active'; } ?>" href="index.php?mod=2"><i class="fa fa-book"></i> Matriculas</a>
-    <a class="nav-link <?php if($mod == 3){ echo 'active'; } ?>" href="index.php?mod=3"><i class="fa fa-mortar-board"></i> Cerificaciones</a>
+    <a class="nav-link <?php if($mod == 1){ echo 'active'; } ?>" aria-current="page" href="panel.php?mod=1"><i class="fa fa-ticket"></i> Preinscripciones</a>
+    <a class="nav-link <?php if($mod == 2){ echo 'active'; } ?>" href="panel.php?mod=2"><i class="fa fa-book"></i> Matriculas</a>
+    <a class="nav-link <?php if($mod == 3){ echo 'active'; } ?>" href="panel.php?mod=3"><i class="fa fa-mortar-board"></i> Cerificaciones</a>
   </nav> 
   <div class="row">
     <div class="col m-4">
-      <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-plus"> </i> Nuevo</button>
+      <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fa fa-plus"> </i> Nuevo</button>      
+      <button class="btn btn-primary btn-lg m-2" data-bs-toggle="modal" data-bs-target="#modalContrasena"><i class="fa fa-key"> </i> Cambiar contraseña</button>
     </div>
   </div>
   <div class="row">
@@ -112,6 +126,30 @@ if(isset($_POST['usuario']) && isset($_POST['contrasena'])){
       </div>
     </div>
   </div>
+  </div>
+  <div class="modal fade" id="modalContrasena" tabindex="-2" aria-labelledby="modalContrasenaTitle" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalContrasenaTitle">Cambiar contraseña</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="formPass">
+          <div class="modal-body">
+              <label for="contrasena1">Nueva contraseña</label>
+              <input class="form form-control mb-3" type="password" id="contrasena1" value="" placeholder="ingresa tu nueva contraseña">
+              <label for="contrasena2">Confirma la contraseña</label>
+              <input class="form form-control mb-3" type="password" id="contrasena2" value="" placeholder="confirma la contraseña">
+              <input type="hidden" id="usuario" value="<?php echo $_SESSION['usuario']; ?>">
+              <div id="error"></div>    
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Guardar</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </form>  
+      </div>
+    </div>
   </div>
   <footer class="mt-5" style="display: flex; justify-content: center; flex-flow:column nowrap; background: linear-gradient(245deg,#c00000,#ed3237); color: #fff; text-align: center; padding: 60px;">
     <p>

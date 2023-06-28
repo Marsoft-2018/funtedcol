@@ -249,3 +249,38 @@ function cambiarEstado(id,estado){
 function recargar(mod){
   window.location.href = "index.php?mod="+mod;
 }
+
+var formPass = document.querySelector("#formPass");
+
+
+formPass.addEventListener("submit",function (event) {
+  event.preventDefault();
+  const usuario = formPass.querySelector('#usuario').value;
+  const contrasena1 = formPass.querySelector('#contrasena1').value;
+  const contrasena2 = formPass.querySelector('#contrasena2').value;
+  const accion = "cambiarPassword";
+  formPass.querySelector('#error').innerHTML = "";
+  if(contrasena1 != contrasena2){
+    formPass.querySelector('#error').innerHTML = '<div class="alert alert-danger" role="alert">Las contraseñas no coinciden</div>';
+    return;
+  }
+  axios.post('../php/Controladores/login.php?accion='+accion+"&usuario="+usuario+"&contrasena="+contrasena1).then(function(res) {    
+      if(res.status==200) {
+        /*formPass.querySelector('#error').innerHTML = '<div class="alert alert-success" role="alert">'+res.data+'</div>';*/
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: res.data,
+          showConfirmButton: false,
+          timer: 5500
+        });
+      }
+    }).catch(function(err) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: err
+      });
+    });
+  }
+);

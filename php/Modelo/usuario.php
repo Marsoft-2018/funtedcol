@@ -75,6 +75,23 @@
             print "Error, no se pudo eliminar los datos, ".$e;
         }
     }
+
+    public function cambiarPassword(){
+        $this->sql = "UPDATE users SET contrasena = ? WHERE usuario = ?";
+          try {
+            $stm = $this->conexion->prepare($this->sql);
+            $stm->bindparam(1,$this->contrasena);
+            $stm->bindparam(2,$this->usuario);         
+            if($stm->execute()){
+                //$this->datos = ["mensaje"=>"Haz cambiado la contraseña con éxito"];
+                $this->datos = "Haz cambiado la contraseña con éxito";
+                return $this->datos;
+            }
+        } catch (PDOException $e) {
+            $this->datos = "Error, no se pudo cambiar la contraseña, ".$e;
+            return $this->datos;
+        }
+    }
 }
 
 ?>

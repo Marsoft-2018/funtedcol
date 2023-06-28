@@ -1,3 +1,9 @@
+<?php
+  
+  if(session_start()){    
+    session_destroy();
+  }
+?>
 <!doctype html>
 <html lang="es">
   <head>
@@ -32,7 +38,7 @@
         <div class="row mt-5 mb-5">
             <div class="col" style="display: flex; justify-content: center; flex-flow:column nowrap; text-align:center; padding:60px">
                 <div class="container" style="border-radius:12px; padding:50px; width:70%;">
-                    <img src="../../img/escudoG.png" alt="" style="width: 25%;" class="mb-2">
+                    <img src="../img/escudoG.png" alt="" style="width: 25%;" class="mb-2">
                     <h3 class="mb-2">Login</h3>
                     <form action="panel.php" method="post">
                         <input type="text" class="form form-control mt-2" name="usuario" placeholder="Usuario" required>

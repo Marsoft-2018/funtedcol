@@ -1,47 +1,56 @@
 <?php
     require("../modelo/conexion.php");
-    require("../modelo/programa.php");
-    
+    require("../modelo/usuario.php");
+
+    // $request_body = file_get_contents('php://input');
+    // $data = json_decode($request_body, true);
 
 
     $accion = "";
     if(isset($_REQUEST['accion'])){
         $accion = $_REQUEST['accion'];
+    }elseif (isset($_POST['accion'])){
+        $accion = $_POST['accion'];
     }
-
+    
     switch ($accion) {
+        case 'cambiarPassword':
+            $objUsuario = new Usuario();
+            $objUsuario->usuario   =  $_REQUEST['usuario'];
+            $objUsuario->contrasena   =  $_REQUEST['contrasena'];
+            echo $objUsuario->cambiarPassword();
+            break;
         case 'listar':
-            $objPrograma = new Programa();
+            $objUsuario = new Usuario();
             include("../vista/lista.php");
             break;
-        case 'cargar':
-            $objPrograma = new Programa();
-            var_dump($objPrograma->cargar());
+        case 'login':
+            $objUsuario = new Usuario();
+            $objUsuario->usuario   =  $_POST['usuario'];
+            $objUsuario->contrasena   =  $_POST['contrasena'];
+            echo json_encode($objUsuario->cargar());
             break;
         case "Agregar": case "Modificar":
-                $objPrograma = new Programa();   
-                $objPrograma->id       =  $_POST['id'];
-                $objPrograma->nombre   =  $_POST['nombre'];
-                $objPrograma->descripcion   =  $_POST['descripcion'];
+                $objUsuario = new Usuario();   
+                $objUsuario->id       =  $_POST['id'];
+                $objUsuario->usuario   =  $_POST['usuario'];
+                $objUsuario->contrasena   =  $_POST['contrasena'];
                 if ($accion == "Agregar") {
-                    $objPrograma->agregar();
+                    $objUsuario->agregar();
                 }else{
-                    $objPrograma->modificar();
+                    $objUsuario->modificar();
                 }
             break;
         case "Nuevo" : case "Editar":
 
-            $objPrograma = new Programa();
+            $objUsuario = new Usuario();
             include("../vista/formulario.php");
             break;
         case 'Eliminar':
-            $objPrograma = new Programa();
-            $objPrograma->id = $_POST['id'];
-            $objPrograma->eliminar();
-            break;
+            $objUsuario = new Usuario();
+            $objUsuario->id = $_POST['id'];
+            $objUsuario->eliminar();
+            break;     
         
-        default:
-            # code...
-            break;
     }
 ?>
