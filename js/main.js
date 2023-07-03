@@ -1,60 +1,100 @@
 
-// $("#simbolos").click(function(){
-// 	$("#contenidoPrincipal").load("php/simbolos.php",function(){
-// 		$("html, body").delay(20).animate({scrollTop: $('#contenidoPrincipal').offset().top }, 2000);
-// 	});
-// });
-
-function acerca(){
-	$("html, body").delay(20).animate({scrollTop: $('#acerca').offset().top }, 2000);
-}
-
-function mision(){
-	$("html, body").delay(20).animate({scrollTop: $('#mision-div').offset().top }, 2000);
-}
-
-function vision(){
-	$("html, body").delay(20).animate({scrollTop: $('#vision-div').offset().top }, 2000);
-}
-
-function simbolos(){
-	$("html, body").delay(20).animate({scrollTop: $('#simbolos').offset().top }, 2000);
-}
-
-function resena(){
-	$("html, body").delay(20).animate({scrollTop: $('#reseña').offset().top }, 2000);
-}
-
-function filosofia(){
-	$("html, body").delay(20).animate({scrollTop: $('#filosofia').offset().top }, 2000);
-}
-
-function valores(){
-	$("html, body").delay(20).animate({scrollTop: $('#valores').offset().top }, 2000);
-}
-
-function himno(){
-	$("html, body").delay(20).animate({scrollTop: $('#himno').offset().top }, 2000);
-}
-
-
 function galeria(){	
 	top.location.href = "http://www.funtedcol.com.co/galeria.html";
 
 }
 
-function preinscribir(){
-    var mensaje = document.getElementById('respuesta');
-    let accion = "Agregar";
-    let primerNombre = document.getElementById("priNombre").value;
-    let segundoNombre = document.getElementById("segNombre").value;
-    let primerApellido = document.getElementById("priApellido").value;
-    let segundoApellido = document.getElementById("segApellido").value;
-    let tipoDocumento = document.getElementById("tipoDocumento").value;
-    let documento = document.getElementById("numeroDocumento").value;
-    let email = document.getElementById("email").value;
-    let telefono = document.getElementById("telefono").value;
-    let programa = document.getElementById("programa").value;
+// function preinscribir(){
+//     var mensaje = document.getElementById('respuesta');
+//     let accion = "Agregar";
+//     let primerNombre = document.getElementById("priNombre").value;
+//     let segundoNombre = document.getElementById("segNombre").value;
+//     let primerApellido = document.getElementById("priApellido").value;
+//     let segundoApellido = document.getElementById("segApellido").value;
+//     let tipoDocumento = document.getElementById("tipoDocumento").value;
+//     let documento = document.getElementById("numeroDocumento").value;
+//     let email = document.getElementById("email").value;
+//     let telefono = document.getElementById("telefono").value;
+//     let programa = document.getElementById("programa").value;
+//     axios.post('../php/Controladores/preinscripcionController.php', {
+//             accion:accion,
+//             primerNombre : primerNombre,
+//             segundoNombre : segundoNombre,
+//             primerApellido : primerApellido,
+//             segundoApellido : segundoApellido,
+//             tipoDocumento:tipoDocumento,
+//             documento: documento,
+//             email : email,
+//             telefono : telefono,
+//             programa : programa,
+//             estado:1
+//         })
+//         .then(function(res) {
+//           if(res.status==200) {
+//             mensaje.innerHTML = res.data;
+//           }
+//         })
+//         .catch(function(err) {
+//           mensaje.innerText = 'Error de conexión ' + err;
+//         }
+//     );
+// }
+
+const formPreinscripcion = document.querySelector('.formPreinscripcion');
+formPreinscripcion.addEventListener('submit',function(e){
+  e.preventDefault();
+    var mensaje = formPreinscripcion.querySelector('#respuesta');
+    const accion = "Agregar";
+    const primerNombre = formPreinscripcion.querySelector("#priNombre").value;
+    const segundoNombre = formPreinscripcion.querySelector("#segNombre").value;
+    const primerApellido = formPreinscripcion.querySelector("#priApellido").value;
+    const segundoApellido = formPreinscripcion.querySelector("#segApellido").value;
+    const tipoDocumento = formPreinscripcion.querySelector("#tipoDocumento").value;
+    const documento = formPreinscripcion.querySelector("#numeroDocumento").value;
+    const email = formPreinscripcion.querySelector("#email").value;
+    const telefono = formPreinscripcion.querySelector("#telefono").value;
+    const programa = formPreinscripcion.querySelector("#programa").value;
+    mensaje.innerHTML =   "preinscribir desde evenlistener";
+    axios.post('php/Controladores/preinscripcionController.php', {
+            accion:accion,
+            primerNombre : primerNombre,
+            segundoNombre : segundoNombre,
+            primerApellido : primerApellido,
+            segundoApellido : segundoApellido,
+            tipoDocumento:tipoDocumento,
+            documento: documento,
+            email : email,
+            telefono : telefono,
+            programa : programa,
+            estado:1
+        })
+        .then(function(res) {
+          if(res.status==200) {
+            mensaje.innerHTML = res.data;
+          }
+        })
+        .catch(function(err) {
+          mensaje.innerText = 'Error de conexión ' + err;
+        }
+    );
+});
+
+const formPreinscripcion2 = document.querySelector('.formPreinscripcion');
+
+formPreinscripcion2.addEventListener('submit',function(e){
+  e.preventDefault();
+    var mensaje = formPreinscripcion2.querySelector('#respuesta');
+    const accion = "Agregar";
+    const primerNombre = formPreinscripcion2.querySelector("#priNombre").value;
+    const segundoNombre = formPreinscripcion2.querySelector("#segNombre").value;
+    const primerApellido = formPreinscripcion2.querySelector("#priApellido").value;
+    const segundoApellido = formPreinscripcion2.querySelector("#segApellido").value;
+    const tipoDocumento = formPreinscripcion2.querySelector("#tipoDocumento").value;
+    const documento = formPreinscripcion2.querySelector("#numeroDocumento").value;
+    const email = formPreinscripcion2.querySelector("#email").value;
+    const telefono = formPreinscripcion2.querySelector("#telefono").value;
+    const programa = formPreinscripcion2.querySelector("#programa").value;
+    mensaje.innerHTML =   "preinscribir desde evenlistener";
     axios.post('../php/Controladores/preinscripcionController.php', {
             accion:accion,
             primerNombre : primerNombre,
@@ -77,7 +117,7 @@ function preinscribir(){
           mensaje.innerText = 'Error de conexión ' + err;
         }
     );
-}
+});
 
 function registrar(){
   var mensaje = document.getElementById('respuesta');
@@ -284,3 +324,10 @@ formPass.addEventListener("submit",function (event) {
     });
   }
 );
+
+document.querySelector("#scroll-arriba").addEventListener("click",function(){
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+});

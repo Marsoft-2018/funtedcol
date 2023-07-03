@@ -2,7 +2,7 @@
 /** ADD YOUR AWESOME CODES HERE **/
 
 .seccion-informacion{
-    display: flex;
+    display: flex;    
     justify-content: space-around;
     width: 100%;
 }
@@ -53,4 +53,51 @@
 .aliados img{
     width: 9%;
     /*height: 120px;*/
+}
+
+.btnIrArriba{
+    background-color: #c0000043;
+    color: #ffe;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+    box-shadow: 0px 0px 5px rgba(250,250,250,0.5);
+}
+.btnIrArriba:hover{
+    background-color: forestgreen;
+    color: #fff;
+    transform: ease scale(1.5);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-flow:column nowrap;
+    background: linear-gradient(245deg,#c00000,#ed3237);
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.barraContactoLateral{
+    position: fixed;
+    top: 20%;
+    right: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    padding: 10px;
+    text-shadow: 0px 2px 5px rgba(250,250,250,0.6);
+    z-index: 1500;
 }

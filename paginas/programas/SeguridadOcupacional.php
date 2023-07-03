@@ -15,7 +15,8 @@
                     </button>   
                     <button type="button" class="btn btn-info m-3" data-bs-toggle="modal" data-bs-target="#modalTelefono">
                       Llamanos <i class="fa fa-phone"></i>
-                    </button>             
+                    </button>       
+                    <a  type="button" class="btn btn-success m-3"  href="https://api.whatsapp.com/send?phone=573242943174" target="_blank">Escribenos <i class="fa fa-whatsapp"></i></a>                                                         
                 </div>
               </div>
             </div>

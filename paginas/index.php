@@ -36,59 +36,20 @@
 
   </head>
   <body>    
-    <div class="barraContacto">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="right-top">
-              <div class="social-box">
-                <ul>
-                  <li><a href="https://www.facebook.com/funtedcol.funtedcol">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-                  <li><a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </li>
-                  <li><a href="#">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-                  <li><a href="#">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-                  <li><a href="#">
-                    <i class="fa fa-rss-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="left-top">
-              <div class="email-box">
-                <a href="#">
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i> info@funtedcol.com.co</a>
-              </div>
-              <div class="phone-box">
-                <a href="tel:1234567890">
-                  <i class="fa fa-phone" aria-hidden="true"></i> +57 324 294 3174</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <?php   
+      include("barraContacto.php"); 
+      include("barraContactoLateral.php"); 
+    ?> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="background-color: rgb(192,0,0); margin: 0px; color:#000;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="../img/escudo.png" alt="" width="60" height="54" class="d-inline-block align-text-top">
         </a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="color:#000;">
+          <ul class="navbar-nav"  style="color:#000;">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../">Inicio</a>
             </li>
@@ -96,7 +57,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-university"></i> Institución
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="color:#000;">
               <li><a class="dropdown-item" href="../#quienesSomos"><i class="fa fa-building"></i> Quines somos</a></li>
                 <li><a class="dropdown-item" href="../#mision"><i class="fa fa-compass"></i> Misión</a></li>
                 <li><a class="dropdown-item" href="../#vision"><i class="fa fa-eye"></i> Visión</a></li>
@@ -121,19 +82,26 @@
                 <li><a class="dropdown-item" href="#"><i class="fa fa-bicycle"></i> Entrenamiento Deportivo</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa fa-desktop"></i> Auxiliar En Sistemas Informáticos</a></li>
               </ul>
+            </li><li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-graduation-cap"></i> Diplomados y cursos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../index.php#diplomados"><i class="fa  fa-dot-circle-o"></i> Diplomados</a></li>
+                <li><a class="dropdown-item" href="../index.php#seminarios"><i class="fa  fa-dot-circle-o"></i> Seminarios</a></li>
+                <li><a class="dropdown-item" href="../index.php#cursosSalud"><i class="fa  fa-dot-circle-o"></i> Cursos salud</a></li>
+                <li><a class="dropdown-item" href="../index.php#cursosAdmin"><i class="fa  fa-dot-circle-o"></i> Cursos Administrativos</a></li>
+                <li><a class="dropdown-item" href="../index.php#cursosAdmin"><i class="fa  fa-dot-circle-o"></i> Cursos de Belleza</a></li>
+                <li><a class="dropdown-item" href="../index.php#cursosAdmin"><i class="fa  fa-dot-circle-o"></i> Otros cursos</a></li>
+                </ul>              
+            </li>            
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    <i class="fa fa-clipboard"></i> Preinscripción
+                </a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-bookmark-o"></i> Diplomados y cursos
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#diplomados"><i class="fa fa-heartbeat"></i> Diplomados</a></li>
-                <li><a class="dropdown-item" href="#seminarios"><i class="fa fa-heartbeat"></i> Seminarios</a></li>
-                <li><a class="dropdown-item" href="#cursosSalud"><i class="fa fa-heartbeat"></i> Cursos salud</a></li>
-                <li><a class="dropdown-item" href="#cursosAdmin"><i class="fa fa-heartbeat"></i> Cursos Administrativos</a></li>
-                <li><a class="dropdown-item" href="#cursosAdmin"><i class="fa fa-heartbeat"></i> Cursos de Belleza</a></li>
-                <li><a class="dropdown-item" href="#cursosAdmin"><i class="fa fa-heartbeat"></i> Otros cursos</a></li>
-              </ul>              
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../sistema/certificados/index.php" target="_blank"><i class="fa fa-bookmark-o"></i> Descargar cetificado</a>
             </li>
           </ul>
         </div>
@@ -191,43 +159,11 @@
     </div>
   </div>
 </div> <!-- -->
-  <footer class="mt-5" style="display: flex; justify-content: center; flex-flow:column nowrap; background: linear-gradient(245deg,#c00000,#ed3237); color: #fff; text-align: center; padding: 60px;">
-    <p>
-      Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; </br>
-      establecida por el Decreto 4904 de 2009, Decreto 1075 de 2015, Ley G/ral de Educación 115 de 1994.</br>
-      </br>
-      E-mail: funtedcol2018@gmail.com - info@funtedcol.com.co - director@funtedcol.com.co
-      </br>
-      Teléfono: 3242943174
-    </p>
-    </br>
-    <div class="social-box">
-      <ul>
-        <li><a href="https://www.facebook.com/funtedcol.funtedcol">
-          <i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-        <li><a href="#">
-          <i class="fa fa-instagram" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-        <li><a href="#">
-          <i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-        <li><a href="#">
-          <i class="fa fa-twitter-square" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-        <li><a href="#">
-          <i class="fa fa-rss-square" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-      </ul>
-    </div>
 
-  </footer>
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+<?php   
+  include("footer.php"); 
+ ?> 
+    <a href="#" id="scroll-arriba" class="btnIrArriba"><i class="fa fa-angle-up"></i></a>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

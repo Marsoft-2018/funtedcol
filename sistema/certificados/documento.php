@@ -189,7 +189,10 @@ ob_start();
     </style>
 </head>
 <body>
-    <div class="container">
+    <?php
+        foreach ($datos as $certificado) {
+    ?>
+    <div class="container" style="break-after: always;">
         <div class="escudos">
             <div class="escudo1">
                 <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/sistema/certificados/img/escudoColombia.jpg" alt="">
@@ -212,9 +215,6 @@ ob_start();
             <h3>CERTIFICA QUE</h3>
             <br>
         </div>
-        <?php
-            foreach ($datos as $certificado) {
-        ?>
         
         <div class="estudiante">
             <h2 class="nombre"><?php echo $certificado['nombre']; ?></h2>
@@ -253,10 +253,10 @@ ob_start();
             </p>
         </div>
         
+    </div>
         <?php
             }
         ?>
-    </div>
 </body>
 </html>
 <?php

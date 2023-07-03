@@ -43,112 +43,12 @@
 
   </head>
   <body>    
-    <div class="barraContacto">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="right-top">
-              <div class="social-box">
-                <ul>
-                  <li><a href="https://www.facebook.com/funtedcol.funtedcol">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-                  <li><a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </li>
-                  <li><a href="#">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-                  <li><a href="#">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-                  <li><a href="#">
-                    <i class="fa fa-rss-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="left-top">
-              <div class="email-box">
-                <a href="#">
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i> info@funtedcol.com.co</a>
-              </div>
-              <div class="phone-box">
-                <a href="tel:1234567890">
-                  <i class="fa fa-phone" aria-hidden="true"></i> +57 324 294 3174</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="background-color: rgb(192,0,0); margin: 0px; color:#000;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="img/escudo.png" alt="" width="60" height="54" class="d-inline-block align-text-top">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-university"></i> Institución
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#quienesSomos"><i class="fa fa-building"></i> Quines somos</a></li>
-                <li><a class="dropdown-item" href="#mision"><i class="fa fa-compass"></i> Misión</a></li>
-                <li><a class="dropdown-item" href="#vision"><i class="fa fa-eye"></i> Visión</a></li>
-                <li><a class="dropdown-item" href="#simbolos"><i class="fa fa-flag"></i> Símbolos institucionales</a></li>
-                <li><a class="dropdown-item" href="#licencia"><i class="fa fa-book"></i> Licencia y resoluciones</a></li>
-                <li><a class="dropdown-item" href="paginas/index.php?pag=administracion"><i class="fa fa-sitemap"></i> Administracion</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-bookmark-o"></i> Programas Técnicos Laborales
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="paginas/index.php?pro=SeguridadOcupacional"><i class="fa fa-heartbeat"></i> Seguridad ocupacional y laboral</a></li>
-                <li><a class="dropdown-item" href="paginas/index.php?pro=AuxiliarAdministrativo"><i class="fa fa-line-chart"></i> Auxiliar Administrativo</a></li>
-                <li><a class="dropdown-item" href="paginas/index.php?pro=AuxiliarRecursosHumanos"><i class="fa fa-empire"></i> Auxiliar en Recursos Humanos</a></li>
-                <li><a class="dropdown-item" href="paginas/index.php?pro=AuxiliarContable"><i class="fa fa-money"></i> Auxiliar Contable y Financiero</a></li>
-                <li><a class="dropdown-item" href="paginas/index.php?pro=AuxiliarPrimeraInfancia"><i class="fa fa-child"></i> Auxiliar en Educación para la Primera Infancia</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-comments-o"></i> Auxiliar En Mercadeo Y Ventas</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-plug"></i> Electricidad residencial</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-medkit"></i> Auxiliar en Servicios Farmacéuticos en Convenio con CEPRODENT</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-bicycle"></i> Entrenamiento Deportivo</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-desktop"></i> Auxiliar En Sistemas Informáticos</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-bookmark-o"></i> Diplomados y cursos
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#diplomados"><i class="fa fa-heartbeat"></i> Diplomados</a></li>
-                <li><a class="dropdown-item" href="#seminarios"><i class="fa fa-heartbeat"></i> Seminarios</a></li>
-                <li><a class="dropdown-item" href="#cursosSalud"><i class="fa fa-heartbeat"></i> Cursos salud</a></li>
-                <li><a class="dropdown-item" href="#cursosAdmin"><i class="fa fa-heartbeat"></i> Cursos Administrativos</a></li>
-                <li><a class="dropdown-item" href="#cursosAdmin"><i class="fa fa-heartbeat"></i> Cursos de Belleza</a></li>
-                <li><a class="dropdown-item" href="#cursosAdmin"><i class="fa fa-heartbeat"></i> Otros cursos</a></li>
-              </ul>              
-            </li>            
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="sistema/certificados/index.php" target="_blank"><i class="fa fa-bookmark-o"></i> Descargar cetificado</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <?php 
+      include("paginas/barraContacto.php");
+      include("paginas/barraContactoLateral.php"); 
+      include("paginas/navBar.php"); 
+    ?>
+    
     <div id="carouselExampleCaptions" class="carousel slide mt-0" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -199,19 +99,19 @@
     </div>
     <section class="programas" style="display: flex; justify-content: center;">
     <div class="row">
-        <div class="col">
-          <div class="card mx-2" style="width: 25rem;">
-            <img src="img/Recursos_Humanos.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              
-              <h2 class="card-title" style="color: #c00000;">Auxiliar Contable y Financiero</h2>
-              <p class="card-text">La carrera técnica de Auxiliar Contable y Financiero de FUNTEDCOL Realizan la medición y reconocimiento de las transacciones contables y financieras, realizan procesos de liquidación de impuestos, cuantifican costos y registran las operaciones de flujos monetarios, verifican inventarios, depuran y apoyan la elaboración de informes, comprobantes y documentos relacionados con empresa o personas naturales. Son empleados por el sector público y privado.</p>
-              <a href="paginas/index.php?pro=AuxiliarContable" class="btn btn-danger">Ver más</a>
-            </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-5">
+        <div class="card m-2" style="width: 100%; height:100%">
+          <img src="img/Recursos_Humanos.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <h2 class="card-title" style="color: #c00000;">Auxiliar Contable y Financiero</h2>
+            <p class="card-text">La carrera técnica de Auxiliar Contable y Financiero de FUNTEDCOL Realizan la medición y reconocimiento de las transacciones contables y financieras, realizan procesos de liquidación de impuestos, cuantifican costos y registran las operaciones de flujos monetarios, verifican inventarios, depuran y apoyan la elaboración de informes, comprobantes y documentos relacionados con empresa o personas naturales. Son empleados por el sector público y privado.</p>
+            <a href="paginas/index.php?pro=AuxiliarContable" class="btn btn-danger">Ver más</a>
           </div>
         </div>
-      <div class="col">
-        <div class="card mx-2" style="width: 25rem;">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-5">
+        <div class="card m-2" style="width: 100%; height:100%">
             <img src="img/syso.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h2 class="card-title" style="color: #c00000;">Seguridad ocupacional y laboral</h2>
@@ -220,8 +120,8 @@
             </div>
           </div>
           </div>
-        <div class="col">
-          <div class="card mx-2" style="width: 25rem;">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-5">
+          <div class="card m-2" style="width: 100%; height:100%">
             <img src="img/administrativo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               
@@ -231,8 +131,8 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card mx-2" style="width: 25rem;">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-5">
+          <div class="card m-2" style="width: 100%; height:100%">
             <img src="img/primeraInfancia.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               
@@ -246,6 +146,7 @@
         </div>
     </div>
     </section>
+    <?php include("paginas/videos.php"); ?>        
     <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('');" id="quienesSomos">
       <div class="container">
         <div class="row text-right align-items-center">
@@ -317,7 +218,7 @@
             <h3>SIMBOLOS INSTITUCIONALES</h3>
         </div><!-- end title -->
         <div class="row">
-          <div class="col wow fadeInLeft simbolo" data-wow-duration="1.5s" data-wow-delay="0.2s">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInLeft simbolo" data-wow-duration="1.5s" data-wow-delay="0.2s">
             <div class="card mb-4 shadow-sm imgSimbolo">
               <img src="img/escudoG.png" alt="" class="escudo"  style="margin-top: 10px;">
               <div class="card-body">
@@ -328,7 +229,7 @@
               </div>
             </div>
           </div>
-          <div class="col wow fadeInRight simbolo" data-wow-duration="1.5s" data-wow-delay="0.3s">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInRight simbolo" data-wow-duration="1.5s" data-wow-delay="0.3s">
             <div class="card mb-4 shadow-sm imgSimbolo">
               <img src="img/bandera.png" alt="" class="bandera"  style="margin-top: 10px;">
               <div class="card-body">
@@ -346,7 +247,7 @@
         <hr>
         <div class="container">
           <div class="row text-center align-items-center">
-            <div class="col wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
               <div class="mision-vision text-left">
                 <p style="color: #000; font-size: 1.1em; background-color: rgba(250,250,250,0.6); padding:5px;">
                   Coro<br>
@@ -368,7 +269,7 @@
                 </p>
               </div>
             </div>
-            <div class="col wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.4s">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.4s">
               <div class="mision-vision text-left">
                 <p style="color: #000; font-size: 1.1em; background-color: rgba(250,250,250,0.6); padding:5px;">
                   II<br>
@@ -404,14 +305,14 @@
               <h1 style="color: #000;text-align:center;font-size:2em;">DIPLOMADOS</h1>
               <hr>
               <div class="row">
-                <div class="col">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                   <div style="width: 95%;">
                     <img src="img/curso1.jpeg" alt="" style="width:100%;">  
                   </div>                        
                 </div>
-                <div class="col">  
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">  
                   <div class="row">
-                    <div class="col">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                       <ul style="color: #000; font-size: 1.3em;">              
                         <li>	Seguridad Social</li>
                         <li>	Seguridad Y Salud En El Trabajo</li>
@@ -425,7 +326,7 @@
                         <li>	Nómina Y Prestaciones Sociales</li>
                       </ul>  
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                       <ul style="color: #000; font-size: 1.3em;">
                         <li>	Gestión De Recursos Humanos</li>
                         <li>	Neuropedagogía Infantil</li>
@@ -455,9 +356,9 @@
               <h1 style="color: #000;text-align:center;font-size:2em;">CURSOS SALUD</h1>
               <hr>
               <div class="row">
-                <div class="col">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                   <div class="row">
-                    <div class="col">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                       <ul>            
                         <li> Soporte Vital Basico (Bls)</li>
                         <li> Soporte Vital Avanzado (Acls)</li>
@@ -473,7 +374,7 @@
                         <li> Atencion Integrada De Las Enfermedades Prevalentes De La Infancia (Aiepi Clinico)</li>
                       </ul>  
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                       <ul>            
                         <li> Atencion Integrada De Las Enfermedades Prevalentes De La Infancia  (Aiepi Comunitario)</li>
                         <li> Atencion A Victimas De Violencia Sexual</li>
@@ -490,7 +391,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                   <div style="width: 95%;">
                     <img src="img/curso3.jpg" alt="" style="width:100%;">
                   </div>                        
@@ -508,7 +409,7 @@
             <div class="text-right" >
               <div class="row">
                 <h1 style="color: #000;">Cursos Administrativos</h1>
-                <div class="col-7">
+                <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
                   <ul style="color: #000; font-size: 1.3em;">
                     <li>Manejo De Caja Registradora</li>
                     <li>Servicio Al Cliente</li>
@@ -535,7 +436,7 @@
                     <li> Rescate En Alturas</li>
                   </ul>         
                 </div>
-                <div class="col">
+                <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
                   <div style="width: 95%;">
                     <img src="img/curso2.jpg" alt="" style="width:100%;">   
                   </div>                       
@@ -554,39 +455,43 @@
               <h1 style="color: #000;text-align:center;font-size:2em;">SEMINARIOS</h1>
               <hr>
               <div class="row">
-                <div class="col-4">   
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">   
                   <div style="width: 95%;">
                     <img src="img/seminario.jpg" alt="" style="width:100%;">   
                   </div>                      
                 </div>
-                <div class="col-4">
-                  <ul style="color: #000; font-size: 1.3em;">              
-                    <li> Alta Gerencia</li>
-                    <li> Gerencia De Marketing</li>
-                    <li> Gerencia Financiera</li>
-                    <li> Psicologia Del Desarrollo Infantil</li>
-                    <li> Marketing Digital</li>
-                    <li> Legislacion Laboral</li>
-                    <li> Prevencion De Riesgos Laborales En Ambientes De Trabajo</li>
-                    <li> Gestion Empresarial</li>
-                  </ul>  
-                </div>
-                <div class="col-4">
-                  <ul style="color: #000; font-size: 1.3em;">
-                    <li> Psicologia Del Desarrollo Infantil</li>
-                    <li> Instalaciones De Paneles Solares</li>
-                    <li> Energias Renovables</li>
-                    <li> Toxicologia Farmacologica</li>
-                    <li> Farmacocinetica, Farmacodinamia Y Farmacovigilancia</li>
-                    <li> Responsabilidad Social Empresarial</li>
-                  </ul>                            
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <ul style="color: #000; font-size: 1.3em;">              
+                        <li> Alta Gerencia</li>
+                        <li> Gerencia De Marketing</li>
+                        <li> Gerencia Financiera</li>
+                        <li> Psicologia Del Desarrollo Infantil</li>
+                        <li> Marketing Digital</li>
+                        <li> Legislacion Laboral</li>
+                        <li> Prevencion De Riesgos Laborales En Ambientes De Trabajo</li>
+                        <li> Gestion Empresarial</li>
+                      </ul>  
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <ul style="color: #000; font-size: 1.3em;">
+                        <li> Psicologia Del Desarrollo Infantil</li>
+                        <li> Instalaciones De Paneles Solares</li>
+                        <li> Energias Renovables</li>
+                        <li> Toxicologia Farmacologica</li>
+                        <li> Farmacocinetica, Farmacodinamia Y Farmacovigilancia</li>
+                        <li> Responsabilidad Social Empresarial</li>
+                      </ul>
+                  </div>                      
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>                
+    </div>    
+      
  <hr>
   <div class="row">
       <div>
@@ -611,46 +516,123 @@
         </div>
       </div>
   </div>
-  <hr>
-  
-  <footer class="mt-5" style="display: flex; justify-content: center; flex-flow:column nowrap; background: linear-gradient(245deg,#c00000,#ed3237); color: #fff; text-align: center; padding: 60px;">
-    <p>
-      Aprobada por la Secretaria de Educación de Bolívar Mediante Licencia de Funcionamiento Resolución 2487 de 2022; </br>
-      establecida por el Decreto 4904 de 2009, Decreto 1075 de 2015, Ley G/ral de Educación 115 de 1994.</br>
-      </br>
-      E-mail: funtedcol2018@gmail.com - info@funtedcol.com.co - director@funtedcol.com.co
-      </br>
-      Teléfono: 3242943174
-    </p>
-    </br>
-    <div class="social-box">
-      <ul>
-        <li><a href="https://www.facebook.com/funtedcol.funtedcol">
-          <i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-        <li><a href="#">
-          <i class="fa fa-instagram" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-        <li><a href="#">
-          <i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-        <li><a href="#">
-          <i class="fa fa-twitter-square" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-        <li><a href="#">
-          <i class="fa fa-rss-square" aria-hidden="true" style="font-size: 2.5em;"></i>
-        </a>
-      </li>
-      </ul>
+  <hr> 
+  <?php include("paginas/mapa.php"); ?>
+  <?php include("paginas/footer.php"); ?>
+  <a href="#" id="scroll-arriba" class="btnIrArriba"><i class="fa fa-angle-up"></i></a>
+                         
+  <div class="modal fade exampleModalCenter" id="exampleModalCenter2" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalCenterTitle">Formulario de Preinscripción</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Déjanos tus datos y te llamaremos a darte una asesoría personalizada. 
+            Recuerda que la preinscripción no tiene ningún costo y no te compromete a realizar el proceso de matrícula.
+          </p>
+          <hr>
+            <?php
+              require("php/Modelo/conexion.php");
+              require("php/Modelo/categoria.php");
+              require("php/Modelo/programa.php");
+            ?>
+            <form class="formPreinscripcion">
+              <div>
+                  <div class="row">
+                      <div class="col mb-3">
+                          <label for="priNombre" class="form-label">Primer nombre</label>
+                          <input type="text" class="form-control" id="priNombre" placeholder="Digita tu nombre aquí" required>
+                      </div>
+                      <div class="col mb-3">
+                          <label for="segNombre" class="form-label">Segundo nombre</label>
+                          <input type="text" class="form-control" id="segNombre" placeholder="Digita tu nombre aquí">
+                      </div>        
+                  </div>
+                  <div class="row">
+                      <div class="col mb-3">
+                          <label for="priApellido" class="form-label">Primer apellido</label>
+                          <input type="text" class="form-control" id="priApellido" placeholder="Digita tu apellido aquí" required>
+                      </div>
+                      <div class="col mb-3">
+                          <label for="segApellido" class="form-label">Segundo apellido</label>
+                          <input type="text" class="form-control" id="segApellido" placeholder="Digita tu apellido aquí">
+                      </div>        
+                  </div>
+                  <div class="row">
+                      <div class="col mb-3">
+                          <label for="tipoDocumento" class="form-label">Tipo de documento</label>
+                          <select class="form-control" id="tipoDocumento" required>
+                              <option value="">Seleccione...</option>
+                              <option value="TI">Tarjeta de identidad</option>
+                              <option value="CC">Cédula de ciudadanía</option>
+                              <option value="CE">Cédula de extranjería</option>
+                              <option value="NES">Número de Secretaría</option>
+                          </select>
+                      </div>
+                      <div class="col mb-3">
+                          <label for="numeroDocumento" class="form-label">Numero de documento</label>
+                          <input type="text" class="form-control" id="numeroDocumento" required>
+                      </div>        
+                  </div>
+                  <div class="row">
+                      <div class="col mb-3">
+                          <label for="telefono" class="form-label">Tel. Celular</label>
+                          <input type="text" class="form-control" id="telefono" placeholder="" required>
+                      </div>
+                      <div class="col mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="name@ejemplo.com" required>
+                      </div>        
+                  </div>
+                  <div class="row">        
+                      <div class="col mb-3">
+                          <label for="programa" class="form-label">Programas</label>
+                          <select class="form-select" id="programa" required>
+                              <option selected value="">Selecciona..</option>
+                              <?php
+                                  $objCategoria = new Categoria();
+                                  foreach ($objCategoria->listar() as $categoria) {
+                                      $objPrograma = new Programa();
+                                      $objPrograma->idCategoria = $categoria['id'];
+                              ?>
+                                      <optgroup label="<?php echo $categoria['nombre'] ?>">
+                              <?php     foreach ($objPrograma->listar_categoria() as $programa) {   ?>
+                                          <option value="<?php echo $programa['id'] ?>"><?php echo $programa['nombre'] ?></option>
+                              <?php     }   ?>
+                                      </optgroup>
+                              <?php   } ?>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                              <label class="form-check-label" for="flexCheckChecked">
+                                  He leído y acepto la <a href="paginas/?pag=autorizacionDatos" target="_blank" style="font-weight: bold; font-size: 11px"> Política de Tratamiento de Datos Personales</a>            										
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+              </div>            
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <!-- <button type="buttom" class="btn btn-primary" onclick="preinscribir()" >Preisncribirme</button> -->
+                <button type="submit" class="btn btn-primary" >Preisncribirme</button>
+              </div>
+              <div class="row">
+                <div class="col" id="respuesta">
+                    
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
     </div>
-
-  </footer>
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
+  </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -662,6 +644,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   -->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
     
   </body>
 </html>

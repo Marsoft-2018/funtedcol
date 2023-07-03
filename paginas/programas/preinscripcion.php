@@ -3,7 +3,7 @@
     require("../php/Modelo/categoria.php");
     require("../php/Modelo/programa.php");
 ?>
-<!-- <form  onsubmit=""> -->
+<form  class="formPreinscripcion"> 
     <div>
         <div class="row">
             <div class="col mb-3">
@@ -38,7 +38,7 @@
             </div>
             <div class="col mb-3">
                 <label for="numeroDocumento" class="form-label">Numero de documento</label>
-                <input type="text" class="form-control" id="numeroDocumento" >
+                <input type="text" class="form-control" id="numeroDocumento" required>
             </div>        
         </div>
         <div class="row">
@@ -85,11 +85,11 @@
     
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary" onclick="preinscribir()">Preisncribirme</button>
-      </div>
-        <div class="row">
-            <div class="col" id="respuesta">
-                
-            </div>
+        <button type="submit" class="btn btn-primary">Preisncribirme</button>
+    </div>
+    <div class="row">
+        <div class="col" id="respuesta">
+            
         </div>
-<!-- </form> -->
+    </div>
+</form>

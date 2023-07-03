@@ -29,7 +29,7 @@
   <body> 
     <div>
         <div class="row">
-            <div class="col" style="height: 100%; display: flex; justify-content: start; flex-flow:column nowrap; align-items:center; background: linear-gradient(195deg,#c00000,#623237); color: #fff; text-align: center;padding:35px;">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height: 100%; display: flex; justify-content: start; flex-flow:column nowrap; align-items:center; background: linear-gradient(195deg,#c00000,#623237); color: #fff; text-align: center;padding:35px;">
                 <h1 class="mb-2">DESCARGA DE CERTIFICADO</h1>   
                 <div style="min-height: 50%; max-height:70%;width:70%;">
                     <img src="img/certificacion.png" alt="" style="width: 70%;">
@@ -47,7 +47,7 @@
                     </br>
                 </footer>
             </div>
-            <div class="col" style="display: flex; justify-content: center; flex-flow:column nowrap; text-align:center; padding:60px">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="display: flex; justify-content: center; flex-flow:column nowrap; text-align:center; padding:60px">
                 <div class="container" style="border-radius:12px; padding:50px; width:70%;">
                     <img src="../../img/escudoG.png" alt="" style="width: 25%;" class="mb-2">
                     <h3 class="mb-2">Certificados</h3>
